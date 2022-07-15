@@ -1,43 +1,26 @@
 
 // @mui
-import { styled, useTheme } from '@mui/material/styles';
-import { Grid, Divider, Container, Typography, Stack, Box, Button, IconButton } from '@mui/material';
-import { Icon } from '@iconify/react';
+import { styled,  } from '@mui/material/styles';
+import { Grid,  Typography, Stack, Box, } from '@mui/material';
 
 // components
 import RouterLink from '../../components/RouterLink';
 import { GradientStyle } from '../../pages/Home';
 import { purplePreset } from '../../utils/getColorPresets';
-
+import IconButton  from '../../components/IconButton';
 // ----------------------------------------------------------------------
 
-const LINKS = [
-    {
-        headline: 'Legal',
-        children: [
-            { name: 'Terms and Condition', href: '#' },
-            { name: 'Privacy Policy', href: '#' },
-        ],
-    },
-    {
-        headline: 'Contact',
-        children: [
-            { name: 'support@minimals.cc', href: '#' },
-            { name: 'Los Angeles, 359  Hidden Valley Road', href: '#' },
-        ],
-    },
-];
 
 const RootStyle = styled('div')(({ theme }) => ({
     position: 'relative',
     backgroundColor: theme.palette.background.default,
-    paddingBottom:10,
+    paddingBottom: 10,
 }));
 
 // ----------------------------------------------------------------------
 
 export default function MainFooter() {
-    const theme = useTheme();
+
     return (
         <RootStyle>
 
@@ -47,7 +30,7 @@ export default function MainFooter() {
                     justifyContent={{ xs: 'center', md: 'space-between' }}
                     sx={{ textAlign: { xs: 'center', md: 'left' } }}
                 >
-                    <Box sx={{paddingY:2, width: '100%',background:purplePreset.lighter  }}>
+                    <Box sx={{ paddingY: 2, width: '100%', background: purplePreset.lighter }}>
                         <Grid container justifyContent={'center'}>
                             <Grid item xs={6} sm={4} lg={2} display={'flex'} justifyContent={'center'} padding={1}><img src='./assets/images/coinbase.png' alt='coinbase' width={'100%'} /></Grid>
                             <Grid item xs={6} sm={4} lg={2} display={'flex'} justifyContent padding={1}><img src='./assets/images/combinator.png' alt='combinator' width={'100%'} /></Grid>
@@ -57,7 +40,7 @@ export default function MainFooter() {
                         </Grid>
                     </Box>
 
-                    <GradientStyle sx={{ mb: 3, width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', paddingTop:{xs:2,sm:10}, paddingX: { xs: 2, sm: 10 } }}>
+                    <GradientStyle sx={{ mb: 3, width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', paddingTop: { xs: 2, sm: 10 }, paddingX: { xs: 2, sm: 10 } }}>
                         <Stack gap={2} sx={{ mb: 3, paddingX: 2 }} alignItems='start'>
                             <Typography variant={'h5'} sx={{ mb: 1 }}>Marketplace</Typography>
                             <RouterLink to='/' color='gray'>All NFTs</RouterLink>
@@ -100,25 +83,17 @@ export default function MainFooter() {
 
 
             </Box>
-            <Box display={'flex'} flexDirection={{ xs: 'column', md: 'row', }} paddingX={{xs:4,md:10}} justifyContent={'space-between'} alignItems={"center"} gap={2}>
+            <Box display={'flex'} flexDirection={{ xs: 'column', md: 'row', }} paddingX={{ xs: 4, md: 10 }} justifyContent={'space-between'} alignItems={"center"} gap={2}>
                 <Typography component='div'>
                     ® 2022. All Right Reserved   |
                     <RouterLink color='gray' to="/">  Privacy Policy</RouterLink> |
                     <RouterLink color='gray' to="/">  Term Of Use</RouterLink>
                 </Typography>
-                <Box display = {'flex'} gap = {2}>
-                    <IconButton sx = {{background:theme.palette.primary.main, '&:hover':{background:theme.palette.primary.dark},}}>
-                        <Icon icon = 'bxl:twitter' width = '20'   color={'white'}/>
-                    </IconButton>
-                    <IconButton sx = {{background:theme.palette.primary.main,'&:hover':{background:theme.palette.primary.dark},}}>
-                        <Icon icon = 'gg:facebook' width = '20'  color={'white'}/>
-                    </IconButton>
-                    <IconButton sx = {{background:theme.palette.primary.main, '&:hover':{background:theme.palette.primary.dark},}}>
-                        <Icon icon = 'bxl:instagram-alt' width = '20'  color={'white'}/>
-                    </IconButton>
-                    <IconButton sx = {{background:theme.palette.primary.main, '&:hover':{background:theme.palette.primary.dark},}}>
-                        <Icon icon = 'bxs:camera' width = '20'  color={'white'} />
-                    </IconButton>
+                <Box display={'flex'} gap={2}>
+                    <IconButton icon='bxl:twitter'   />
+                    <IconButton icon='gg:facebook'/>
+                    <IconButton icon='bxl:instagram-alt'/>
+                    <IconButton icon='bxs:camera'/>
                 </Box>
             </Box>
         </RootStyle>

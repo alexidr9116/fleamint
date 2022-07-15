@@ -4,9 +4,11 @@ import { Icon } from "@iconify/react";
 import { MenuRoutes } from "../../_mock/MenuItems";
 import Iconify from "../../components/Iconify";
 import useResponsive from "../../hooks/useResponsive";
+import RouterLink from "../../components/RouterLink";
 
 
-const MenuAction = styled('a')(({theme}) => ({
+const MenuAction = styled('div')(({theme}) => ({
+   
     cursor:'pointer',
     display:'flex',
     alignItems:'center',
@@ -18,8 +20,8 @@ export default function MainMenu() {
     return (
         <Stack direction='row' gap={2} alignItems="center" >
             {!isMobile && MenuRoutes.map((menu, index) => (
-                <MenuAction key={index}>
-                    {menu.title}
+                <MenuAction key={index} >
+                    <RouterLink to = {menu.path}>{menu.title}</RouterLink>
                     {menu.elements &&
                     <Iconify icon={"bx:chevron-down"} />
                      }

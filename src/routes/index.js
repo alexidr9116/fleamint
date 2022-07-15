@@ -37,7 +37,7 @@ export default function Router() {
       element: <MainLayout />,
       children: [
         { element: <HomePage />, index: true },
-       
+        { element: <AboutUsPage />, path: 'about' },
       ],
     },
     { path: '*', element: <Navigate to="/404" replace /> },
@@ -47,6 +47,7 @@ export default function Router() {
 
 // MAIN
 const HomePage = Loadable(lazy(() => import('../pages/Home')));
+const AboutUsPage = Loadable(lazy(() => import('../pages/About')));
  
 const Page500 = Loadable(lazy(() => import('../pages/Page500')));
 const Page403 = Loadable(lazy(() => import('../pages/Page403')));
