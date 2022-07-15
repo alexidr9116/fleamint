@@ -7,7 +7,7 @@ import { Grid,  Typography, Stack, Box, } from '@mui/material';
 import RouterLink from '../../components/RouterLink';
 import { GradientStyle } from '../../pages/Home';
 import { purplePreset } from '../../utils/getColorPresets';
-import IconButton  from '../../components/IconButton';
+import IconfyButton  from '../../components/IconfyButton';
 // ----------------------------------------------------------------------
 
 
@@ -23,7 +23,6 @@ export default function MainFooter() {
 
     return (
         <RootStyle>
-
             <Box sx={{ pt: 4, }} >
                 <Grid
                     container
@@ -90,10 +89,10 @@ export default function MainFooter() {
                     <RouterLink color='gray' to="/">  Term Of Use</RouterLink>
                 </Typography>
                 <Box display={'flex'} gap={2}>
-                    <IconButton icon='bxl:twitter'   />
-                    <IconButton icon='gg:facebook'/>
-                    <IconButton icon='bxl:instagram-alt'/>
-                    <IconButton icon='bxs:camera'/>
+                    <IconfyButton icon='bxl:twitter'   />
+                    <IconfyButton icon='gg:facebook'/>
+                    <IconfyButton icon='bxl:instagram-alt'/>
+                    <IconfyButton icon='bxs:camera'/>
                 </Box>
             </Box>
         </RootStyle>

@@ -4,7 +4,7 @@ import { styled, useTheme } from '@mui/material/styles';
 import { CardStyle } from '../../pages/Home';
 import MembershipCard from '../../components/cards/MembershipCard';
 
-import IconButton from '../../components/IconButton';
+
 import { purplePreset } from '../../utils/getColorPresets';
 import { MembershipData } from '../../_mock/Membership';
 import StayInLoop from '../StayInLoop';

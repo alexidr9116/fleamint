@@ -2,7 +2,7 @@
 import { Box, Container, Grid, Stack, Typography } from '@mui/material';
 import { styled, useTheme } from '@mui/material/styles';
  
-import IconButton from '../../components/IconButton';
+import IconfyButton from '../../components/IconfyButton';
 import { GradientStyle } from '../../pages/Home';
 
 const AboutCardStyle = styled('div')(({ theme, sx }) => ({
@@ -67,7 +67,7 @@ export default function Introduce() {
                 <Box sx={{ position: 'relative' }}>
                     <img src='./assets/images/video-thumb2.png' alt='' width={'100%'} />
                     <Box sx={{ position: "absolute", top: 0, width: '100%', height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                        <IconButton icon="bx:play-circle" width={40} />
+                        <IconfyButton icon="bx:play-circle" width={40} />
                     </Box>
                 </Box>
             </Container>

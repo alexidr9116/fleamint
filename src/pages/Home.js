@@ -23,7 +23,7 @@ export const CardStyle = styled('div')(({ sx }) => ({
 }));
 export const GradientStyle = styled('div')(({ sx }) => ({
   ...sx,
-
+  height:'100%',
   background: `linear-gradient(rgba(242, 156, 67, 0.26) 0%, rgba(229, 239, 255, 0.263) 83.7%, rgba(229, 239, 255, 0) 100%)`,
 
 }));

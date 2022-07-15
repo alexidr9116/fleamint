@@ -50,6 +50,7 @@ export default function ProgressBar() {
   }, []);
 
   useEffect(() => {
+    console.log(Date.now()," is done")
     NProgress.done();
   }, []);
 

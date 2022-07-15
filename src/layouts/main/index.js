@@ -1,4 +1,5 @@
-import {  Outlet } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Outlet, useLocation } from 'react-router-dom';
 // @mui
 import { Box, Stack } from '@mui/material';
 // components
@@ -6,16 +7,22 @@ import { Box, Stack } from '@mui/material';
 import Footer from './Footer';
 import Header from './Header';
 
+
 // ----------------------------------------------------------------------
 
 export default function MainLayout() {
 
+
     return (
         <Stack sx={{ minHeight: 1 }}>
             <Header />
-            <Outlet />
+            <Box sx={{ minHeight: '100vh' }}>
+                <Outlet />
+            </Box>
             <Box sx={{ flexGrow: 1 }} />
+
             <Footer />
+
         </Stack>
     );
 }
