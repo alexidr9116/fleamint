@@ -7,13 +7,14 @@ import MembershipCard from '../../components/cards/MembershipCard';
 import IconButton from '../../components/IconButton';
 import { purplePreset } from '../../utils/getColorPresets';
 import { MembershipData } from '../../_mock/Membership';
+import StayInLoop from '../StayInLoop';
 
 export default function MemberShip() {
     const theme = useTheme();
 
     return (
         <Stack justifyContent={'center'} padding={{ xs: 2, sm: 4 }}>
-            <Box sx={{ background: purplePreset.lighter, borderRadius: 1, padding: { xs: 1 } }}>
+            <Box sx={{ background: purplePreset.lighter, borderRadius: 1, padding: { xs: 1 },mb:4 }}>
                 <Stack gap={4}>
                     <Box textAlign={'center'} padding={2}>
                         <Typography color={theme.palette.primary.dark} variant="h3">Membership</Typography>
@@ -39,7 +40,7 @@ export default function MemberShip() {
                     </Grid>
                 </Grid>
                 {/* HELP Cards */}
-                <Grid container>
+                <Grid container sx = {{mb:8}}>
                     <Grid item xs={12} sm={6} md={4} sx={{padding:1}}>
                         <CardStyle sx={{ flexDirection: "column", padding: 4 , gap:2}}>
                             <Box display="flex" sx = {{justifyContent:"center"}}>
@@ -72,6 +73,7 @@ export default function MemberShip() {
                     </Grid>
                 </Grid>
                 {/* Stay In the loop */}
+                <StayInLoop />
              
             </Container>
         </Stack>

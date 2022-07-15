@@ -23,30 +23,30 @@ export default function Introduce() {
     const theme = useTheme();
 
     return (
-        <GradientStyle sx={{ paddingTop: 15, display: 'flex', gap: 10, flexDirection: 'column' }} >
+        <GradientStyle sx={{ paddingTop: 15, display: 'flex', gap: 8, flexDirection: 'column' }} >
             <Container>
                 <AboutCardStyle sx={{ padding: { xs: 2, md: 4 } }} >
                     <Stack direction={{ xs: 'column', md: 'row' }} alignItems={'center'}>
                         <img src='./assets/images/about1.png' width={'100%'} height={'100%'} alt='' />
-                        <Stack gap={{ xs: 2, sm: 4 }} padding={4}>
+                        <Stack gap={{ xs: 2, sm: 3 }} padding={2}>
                             <Typography component="p" variant="h3">Our <span style={{ color: theme.palette.primary.dark }}>Company</span></Typography>
                             <Typography color={'gray'}>Fleamint is a global gas free non fungible marketplace.  The platform is decentralized and designed for buying and selling unique digital and physical assets represented by NFT’s and leveraged by smart contracts.</Typography>
                             <Grid container>
                                 <Grid item sm={6}>
                                     <ul>
-                                        <li><p>USP</p></li>
-                                        <li><p>Advisory</p></li>
-                                        <li><p>Staking</p></li>
-                                        <li><p>NFT Property Bonds</p></li>
-                                        <li><p>CSR</p></li>
+                                        <li>USP</li>
+                                        <li>Advisory</li>
+                                        <li>Staking</li>
+                                        <li>NFT Property Bonds</li>
+                                        <li>CSR</li>
                                     </ul>
                                 </Grid>
                                 <Grid item sm={6}>
                                     <ul>
-                                        <li><p>Unique Token Utility</p></li>
-                                        <li><p>Liquidity Pools</p></li>
-                                        <li><p>Yield Farming </p></li>
-                                        <li><p>Low circulating supply</p></li>
+                                        <li>Unique Token Utility</li>
+                                        <li>Liquidity Pools</li>
+                                        <li>Yield Farming </li>
+                                        <li>Low circulating supply</li>
                                     </ul>
                                 </Grid>
                             </Grid>

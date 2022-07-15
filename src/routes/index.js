@@ -38,17 +38,19 @@ export default function Router() {
       children: [
         { element: <HomePage />, index: true },
         { element: <AboutUsPage />, path: 'about' },
+        { element: <BrandShowPage />, path: 'brand' },
       ],
     },
     { path: '*', element: <Navigate to="/404" replace /> },
   ]);
 }
- 
+
 
 // MAIN
 const HomePage = Loadable(lazy(() => import('../pages/Home')));
 const AboutUsPage = Loadable(lazy(() => import('../pages/About')));
- 
+const BrandShowPage = Loadable(lazy(() => import('../pages/Brand')));
+
 const Page500 = Loadable(lazy(() => import('../pages/Page500')));
 const Page403 = Loadable(lazy(() => import('../pages/Page403')));
 const Page404 = Loadable(lazy(() => import('../pages/Page404')));
