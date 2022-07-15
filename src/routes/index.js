@@ -21,6 +21,15 @@ const Loadable = (Component) => (props) => {
 
 export default function Router() {
   return useRoutes([
+    {
+      path: '/market-place',
+      element: <MainLayout />,
+      children: [
+        { element: <NFTCategoriesPage />, index: true },
+        { element: <Navigate to="/market-place" replace />, path: 'categories' },
+    
+      ],
+    },
     // Main Routes
     {
       path: '*',
@@ -50,6 +59,9 @@ export default function Router() {
 const HomePage = Loadable(lazy(() => import('../pages/Home')));
 const AboutUsPage = Loadable(lazy(() => import('../pages/About')));
 const BrandShowPage = Loadable(lazy(() => import('../pages/Brand')));
+
+// MARKET PLACES
+const NFTCategoriesPage = Loadable(lazy(() => import('../pages/marketplace/NFTCategories')));
 
 const Page500 = Loadable(lazy(() => import('../pages/Page500')));
 const Page403 = Loadable(lazy(() => import('../pages/Page403')));

@@ -9,9 +9,7 @@ import SendMessage from '../sections/brand/SendMessage';
 // ----------------------------------------------------------------------
 
 export default function Brand() {
-    useEffect(()=>{
-        console.log(Date.now(), ' is brand')
-    },[])
+   
     return (
         <Page title="">
             <Box sx={{ display: 'flex', gap: { xs: 10, sm: 12, md: 14 }, flexDirection: 'column' }} >
