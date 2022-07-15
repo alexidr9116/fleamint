@@ -72,24 +72,7 @@ export default function MemberShip() {
                     </Grid>
                 </Grid>
                 {/* Stay In the loop */}
-                <Grid container>
-                    <Grid item xs={12} sm={6} sx={{padding:1}}>
-                         <Stack gap = {2}>
-                            <Typography variant = {}></Typography>
-                         </Stack>
-                    </Grid>
-                    <Grid item xs={12} sm={6}  sx={{padding:1}}>
-                        <CardStyle sx={{ flexDirection: "column", padding: 4 , gap:2}}>
-                            <Box display="flex" sx = {{justifyContent:"center"}}>
-                                <img src='./assets/images/help2.png' alt='' />
-                            </Box>
-                            <Typography color='gray' sx = {{textAlign:"center"}}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                            </Typography>
-                        </CardStyle>
-                    </Grid>
-                    
-                </Grid>
+             
             </Container>
         </Stack>
 
