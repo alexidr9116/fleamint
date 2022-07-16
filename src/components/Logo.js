@@ -16,7 +16,7 @@ export default function Logo({ disabledLink = false, sx }) {
   const logo = (
     <Box 
       sx={{ width: 140, height: 70,  cursor:'pointer', ...sx}}
-      src = "./assets/logo.png"  
+      src = "/assets/logo.png"  
       component="img" />
   );
 

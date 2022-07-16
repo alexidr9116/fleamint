@@ -27,7 +27,7 @@ export default function Router() {
       children: [
         { element: <ProfilePage />, index: true },
         { element: <Navigate to="/account" replace />, path: 'profile' },
-    
+        { element: <EditProfilePage />, path: 'edit' },
       ],
     },
     {
@@ -74,6 +74,7 @@ const NFTCategoriesPage = Loadable(lazy(() => import('../pages/marketplace/NFTCa
 
 // ACOUNT ROUTES
 const ProfilePage = Loadable(lazy(() => import('../pages/account/Profile')));
+const EditProfilePage = Loadable(lazy(() => import('../pages/account/EditProfile')));
 
 const Page500 = Loadable(lazy(() => import('../pages/Page500')));
 const Page403 = Loadable(lazy(() => import('../pages/Page403')));
