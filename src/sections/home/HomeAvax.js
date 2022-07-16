@@ -51,12 +51,12 @@ export default function HomeAvax() {
                 <Button variant="outlined" size='large' sx={{ color: theme.palette.primary.dark, paddingX: 10, paddingY: 2, background: 'white', borderColor: 'white', '&:hover': { background: 'transparent', borderColor: 'white', color: 'white' } }}><Typography variant="h6">Connect Wallet</Typography></Button>
             </RootStyle>
             {/* Corporate */}
-            <Grid container sx={{ padding: { md: 10, sm: 6, xs: 4, }}}>
+            <Grid container sx={{ padding: { md: 10, sm: 6, xs: 4, } }}>
                 <Grid item xs={12} md={6} gap={4} >
                     <Typography variant="h3">Coporate</Typography>
                     <Stack gap={2}>
 
-                        <ul >
+                        <ul className='text-ul'>
                             <li>
                                 Provide tools for you to personally measure in real time, no marketing bs. Try it, love it, buy it.
                             </li>
@@ -81,7 +81,7 @@ export default function HomeAvax() {
             {/* Giving Back */}
             <Grid container padding={{ xs: 2, sm: 4, md: 8 }} >
                 <Grid item xs={12} md={6} paddingX={{ xs: 4, md: 8 }} marginBottom={4}>
-                    <Image src='./assets/images/image 177.png' alt=""  width={'100%'} />
+                    <Image src='./assets/images/image 177.png' alt="" width={'100%'} />
                 </Grid>
                 <Grid item xs={12} md={6} gap={4} >
                     <Typography variant="h3">Giving Back</Typography>
@@ -89,7 +89,7 @@ export default function HomeAvax() {
                         <Typography>
                             We offer services to the charities that can change and save lives all over the world, every single day, for free. Giving back to the community and others in neeed is a core tenet of our philisophy and our community.
                         </Typography>
-                        <ul >
+                        <ul className = 'text-ul'>
                             <li>
                                 Provide tools for you to personally measure in real time, no marketing bs. Try it, love it, buy it.
                             </li>

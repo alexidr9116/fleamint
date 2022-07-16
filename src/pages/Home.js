@@ -30,8 +30,8 @@ export const GradientStyle = styled('div')(({ sx }) => ({
 export default function HomePage() {
   return (
     <Page title="">
-      <Box sx={{ display: 'flex', gap: { xs: 10, sm: 12, md: 14 }, flexDirection: 'column' }} >
-        <GradientStyle sx={{ paddingTop: 25, display: 'flex', gap: 20, flexDirection: 'column' }} >
+      <Box sx={{ display: 'flex', gap: { xs: 4, sm: 6, md: 8 }, flexDirection: 'column' }} >
+        <GradientStyle sx={{ paddingTop: 25, display: 'flex', gap: 1, flexDirection: 'column' }} >
           <HomeHero />
           <HomeNotableDrops />
         </GradientStyle>

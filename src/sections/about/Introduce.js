@@ -1,7 +1,7 @@
 // @mui
 import { Box, Container, Grid, Stack, Typography } from '@mui/material';
 import { styled, useTheme } from '@mui/material/styles';
- 
+
 import IconfyButton from '../../components/IconfyButton';
 import { GradientStyle } from '../../pages/Home';
 
@@ -33,7 +33,7 @@ export default function Introduce() {
                             <Typography color={'gray'}>Fleamint is a global gas free non fungible marketplace.  The platform is decentralized and designed for buying and selling unique digital and physical assets represented by NFT’s and leveraged by smart contracts.</Typography>
                             <Grid container>
                                 <Grid item sm={6}>
-                                    <ul>
+                                    <ul className='text-ul'>
                                         <li>USP</li>
                                         <li>Advisory</li>
                                         <li>Staking</li>
@@ -42,7 +42,7 @@ export default function Introduce() {
                                     </ul>
                                 </Grid>
                                 <Grid item sm={6}>
-                                    <ul>
+                                    <ul className='text-ul'>
                                         <li>Unique Token Utility</li>
                                         <li>Liquidity Pools</li>
                                         <li>Yield Farming </li>
