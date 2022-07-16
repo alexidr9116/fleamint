@@ -29,7 +29,7 @@ export const BackgroundImageStyle = styled('div')(({ theme, sx }) => (
 export const ToggoleButton = styled('div')(({ theme, selected }) => (
     {
         padding: '10px 0',
-        textAlign:'center',
+        textAlign: 'center',
         borderRadius: '6px',
         width: '100%',
         background: selected ? theme.palette.primary.main : '#F1F1F1',
@@ -44,7 +44,7 @@ export const SelectStyle = styled('select')(({ theme, }) => (
     {
         outline: 'none',
         border: '1px solid #E5E5E5',
-        borderRadius: '6px',
+        borderRadius: '8px',
         padding: '12px',
         fontSize: '16px',
         fontWeight: 400,
@@ -52,30 +52,30 @@ export const SelectStyle = styled('select')(({ theme, }) => (
     }
 ));
 
-export const SearchBar = styled('div')(({ theme,sx }) => ({
-   
+export const SearchBar = styled('div')(({ theme, sx }) => ({
+
     borderRadius: 8,
     display: 'flex',
-    justifyContent:'space-between',
-    
+    justifyContent: 'space-between',
+
     "& input": {
         border: `1px solid ${theme.palette.primary.dark}`,
-        borderRight:0,
+        borderRight: 0,
         width: '100%',
-        borderRadius:'8px 0px 0px 8px',
-        paddingLeft:'10px', 
-        "&:focus, &:active":{
-            outline:'none',
+        borderRadius: '8px 0px 0px 8px',
+        paddingLeft: '10px',
+        "&:focus, &:active": {
+            outline: 'none',
         }
     },
     "& button": {
         backgroundColor: theme.palette.primary.dark,
-        border:`1px solid ${theme.palette.primary.dark}`,
-        borderRadius:'0 8px 8px 0',
-        color:'white',
-        cursor:'pointer',
-        "&:hover":{
-            color:theme.palette.primary.dark,
+        border: `1px solid ${theme.palette.primary.dark}`,
+        borderRadius: '0 8px 8px 0',
+        color: 'white',
+        cursor: 'pointer',
+        "&:hover": {
+            color: theme.palette.primary.dark,
             backgroundColor: 'transparent',
         },
         transition: 'all 0.4s ease-in-out',
@@ -95,4 +95,35 @@ export const RootStyle = styled('div')(({ theme, sx }) => ({
     color: 'white',
     ...sx,
     width: '100%',
+}));
+
+export const TableStyle = styled('table')(({ theme, sx }) => ({
+    width: '100%',
+    color: '#212529',
+    borderBottomLeftRadius:10,
+    borderBottomRightRadius:10,
+    "& thead tr th": {
+        borderTop: `none`,
+        borderBottom: `1px solid #FBE7D3 !important`,
+        background: 'rgba(244, 157, 55, 0.6)',
+        fontWeight: 500,
+        fontSize: 14,
+        color: 'white',
+        verticalAlign: 'bottom',
+        padding: '0.75rem',
+
+    },
+    "& tbody tr td": {
+        background: 'white',
+        padding: 3,
+        paddingLeft: 10,
+        borderBottom: `1px solid #FBE7D3`,
+        verticalAlign: `middle`,
+    },
+    "& tbody tr td img": {
+        height:40,
+        borderRadius:10,
+        verticalAlign: `middle`,
+    },
+    ...sx
 }));

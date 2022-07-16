@@ -31,11 +31,11 @@ export default function MainFooter() {
                 >
                     <Box sx={{ paddingY: 2, width: '100%', background: purplePreset.lighter }}>
                         <Grid container justifyContent={'center'}>
-                            <Grid item xs={6} sm={4} lg={2} display={'flex'} justifyContent={'center'} padding={1}><img src='./assets/images/coinbase.png' alt='coinbase' width={'100%'} /></Grid>
-                            <Grid item xs={6} sm={4} lg={2} display={'flex'} justifyContent padding={1}><img src='./assets/images/combinator.png' alt='combinator' width={'100%'} /></Grid>
-                            <Grid item xs={6} sm={4} lg={2} display={'flex'} justifyContent padding={1}> <img src='./assets/images/dapper.png' alt='dapper' width={'100%'} /></Grid>
-                            <Grid item xs={6} sm={4} lg={2} display={'flex'} justifyContent padding={1}><img src='./assets/images/quant.png' alt='quant' width={'100%'} loading='lazy' /></Grid>
-                            <Grid item xs={6} sm={4} lg={2} display={'flex'} justifyContent padding={1}><img src='./assets/images/blockchain.png' alt='blockchain' /></Grid>
+                            <Grid item xs={6} sm={4} lg={2} display={'flex'} justifyContent={'center'} padding={1}><img src='/assets/images/coinbase.png' alt='coinbase' width={'100%'} /></Grid>
+                            <Grid item xs={6} sm={4} lg={2} display={'flex'} justifyContent padding={1}><img src='/assets/images/combinator.png' alt='combinator' width={'100%'} /></Grid>
+                            <Grid item xs={6} sm={4} lg={2} display={'flex'} justifyContent padding={1}> <img src='/assets/images/dapper.png' alt='dapper' width={'100%'} /></Grid>
+                            <Grid item xs={6} sm={4} lg={2} display={'flex'} justifyContent padding={1}><img src='/assets/images/quant.png' alt='quant' width={'100%'} loading='lazy' /></Grid>
+                            <Grid item xs={6} sm={4} lg={2} display={'flex'} justifyContent padding={1}><img src='/assets/images/blockchain.png' alt='blockchain' /></Grid>
                         </Grid>
                     </Box>
 

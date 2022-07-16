@@ -24,7 +24,7 @@ export default function StayInLoop() {
                 </Grid>
                 <Grid item xs={12} sm={6} sx ={{padding:{xs:4, md:8, lg:12}}}>
                     <Stack gap={2}>
-                        <Image alt ='' src = './assets/images/newlater.png'/>
+                        <Image alt ='' src = '/assets/images/newlater.png'/>
                     </Stack>
                 </Grid>
             </Grid>

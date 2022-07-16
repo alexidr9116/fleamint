@@ -18,9 +18,9 @@ const SLIDER_SETTING = {
 }
 
 const AUTHORS = [
-    { cover: './assets/images/nft1.png', title: 'The cartoon monster Ⓡ', avatar: './assets/images/author.png', author: 'John Doe', isVerified: true, bid: 1000, time: '15 hours left' },
+    { cover: '/assets/images/nft1.png', title: 'The cartoon monster Ⓡ', avatar: '/assets/images/author.png', author: 'John Doe', isVerified: true, bid: 1000, time: '15 hours left' },
 
-    { cover: './assets/images/nft1.png', title: 'The cartoon monster Ⓡ', avatar: './assets/images/author.png', author: 'John Smith', isVerified: false, bid: 300, time: '12 hours left' },
+    { cover: '/assets/images/nft1.png', title: 'The cartoon monster Ⓡ', avatar: '/assets/images/author.png', author: 'John Smith', isVerified: false, bid: 300, time: '12 hours left' },
 
 ]
 

@@ -13,7 +13,7 @@ export default function HomeAvax() {
             {/* Become a creator */}
             <Grid container padding={{ xs: 2, sm: 4, md: 8 }}>
                 <Grid item md={6} sm={12} paddingX={{ sm: 10, lg: 14 }}>
-                    <Image src='./assets/images/image 150.png' alt='' width={'100%'} />
+                    <Image src='/assets/images/image 150.png' alt='' width={'100%'} />
                 </Grid>
                 <Grid item md={6} sm={12}>
                     <Stack gap={4}>
@@ -61,7 +61,7 @@ export default function HomeAvax() {
                     </Stack>
                 </Grid>
                 <Grid item xs={12} md={6} paddingX={{ xs: 4, md: 8, }} >
-                    <Image src='./assets/images/image 10.png' alt="" width={'100%'} />
+                    <Image src='/assets/images/image 10.png' alt="" width={'100%'} />
                 </Grid>
 
 
@@ -69,7 +69,7 @@ export default function HomeAvax() {
             {/* Giving Back */}
             <Grid container padding={{ xs: 2, sm: 4, md: 8 }} >
                 <Grid item xs={12} md={6} paddingX={{ xs: 4, md: 8 }} marginBottom={4}>
-                    <Image src='./assets/images/image 177.png' alt="" width={'100%'} />
+                    <Image src='/assets/images/image 177.png' alt="" width={'100%'} />
                 </Grid>
                 <Grid item xs={12} md={6} gap={4} >
                     <Typography variant="h3">Giving Back</Typography>

@@ -27,7 +27,7 @@ export default function Introduce() {
             <Container>
                 <AboutCardStyle sx={{ padding: { xs: 2, md: 4 } }} >
                     <Stack direction={{ xs: 'column', md: 'row' }} alignItems={'center'}>
-                        <img src='./assets/images/about1.png' width={'100%'} height={'100%'} alt='' />
+                        <img src='/assets/images/about1.png' width={'100%'} height={'100%'} alt='' />
                         <Stack gap={{ xs: 2, sm: 3 }} padding={2}>
                             <Typography component="p" variant="h3">Our <span style={{ color: theme.palette.primary.dark }}>Company</span></Typography>
                             <Typography color={'gray'}>Fleamint is a global gas free non fungible marketplace.  The platform is decentralized and designed for buying and selling unique digital and physical assets represented by NFT’s and leveraged by smart contracts.</Typography>
@@ -65,7 +65,7 @@ export default function Introduce() {
                     </Box>
                 </Stack>
                 <Box sx={{ position: 'relative' }}>
-                    <img src='./assets/images/video-thumb2.png' alt='' width={'100%'} />
+                    <img src='/assets/images/video-thumb2.png' alt='' width={'100%'} />
                     <Box sx={{ position: "absolute", top: 0, width: '100%', height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
                         <IconfyButton icon="bx:play-circle" width={40} />
                     </Box>

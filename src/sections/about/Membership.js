@@ -44,7 +44,7 @@ export default function MemberShip() {
                     <Grid item xs={12} sm={6} md={4} sx={{padding:1}}>
                         <CardStyle sx={{ flexDirection: "column", padding: 4 , gap:2}}>
                             <Box display="flex" sx = {{justifyContent:"center"}}>
-                                <img src='./assets/images/help1.png' alt='' />
+                                <img src='/assets/images/help1.png' alt='' />
                             </Box>
                             <Typography color='gray' sx = {{textAlign:"center"}}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -54,7 +54,7 @@ export default function MemberShip() {
                     <Grid item xs={12} sm={6} md={4} sx={{padding:1}}>
                         <CardStyle sx={{ flexDirection: "column", padding: 4 , gap:2}}>
                             <Box display="flex" sx = {{justifyContent:"center"}}>
-                                <img src='./assets/images/help2.png' alt='' />
+                                <img src='/assets/images/help2.png' alt='' />
                             </Box>
                             <Typography color='gray' sx = {{textAlign:"center"}}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -64,7 +64,7 @@ export default function MemberShip() {
                     <Grid item xs={12} sm={6} md={4} sx={{padding:1}}>
                         <CardStyle sx={{ flexDirection: "column", padding: 4 , gap:2}}>
                             <Box display="flex" sx = {{justifyContent:"center"}}>
-                                <img src='./assets/images/help3.png' alt='' />
+                                <img src='/assets/images/help3.png' alt='' />
                             </Box>
                             <Typography color='gray' sx = {{textAlign:"center"}}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et

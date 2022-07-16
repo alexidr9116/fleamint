@@ -7,10 +7,10 @@ const CONTENT_COLORS = ["white", "white", "black", "white"];
 const BUTTON_COLOR = ['white','white','black','white'];
 const TITLE_COLORS = ["#E4CD85", "#5B2F02", "#394047", "white"];
 const BACKGROUNDS = [
-    "./assets/images/member-ship-bg-1.png",
-    "./assets/images/member-ship-bg-2.png",
-    "./assets/images/member-ship-bg-3.png",
-    "./assets/images/member-ship-bg-4.png"
+    "/assets/images/member-ship-bg-1.png",
+    "/assets/images/member-ship-bg-2.png",
+    "/assets/images/member-ship-bg-3.png",
+    "/assets/images/member-ship-bg-4.png"
 ]
 const MembershipCardStyle = styled('div')(({ theme, index }) => ({
     display: "flex",

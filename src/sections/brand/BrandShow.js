@@ -22,7 +22,7 @@ export default function BrandShow() {
                     <Typography color='gray' sx={{ mb: 4 }}>We work daily to become better and we are ready to share best practices.</Typography>
                     {/* VIDEO */}
                     <Box sx={{ position: 'relative' }}>
-                        <Image src='./assets/images/video-thumb.png' alt='' />
+                        <Image src='/assets/images/video-thumb.png' alt='' />
                         <Box sx={{ position: 'absolute', top: 0, width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                             <IconfyButton icon='bi:play-fill' width={40} />
                         </Box>

@@ -1,24 +1,24 @@
 
 export const NotableDropsData = [
-    {image:'./assets/images/card1.png',title:'Phantom Galaxies Planet Auction', description:'These NFTs will be awarded for success in a Planet Sale auction, and entitle owners to a Planet Genesis'},
-    {image:'./assets/images/card2.png',title:'Phantom Galaxies Planet Auction', description:'These NFTs will be awarded for success in a Planet Sale auction, and entitle owners to a Planet Genesis'},
-    {image:'./assets/images/card3.png',title:'Phantom Galaxies Planet Auction', description:'These NFTs will be awarded for success in a Planet Sale auction, and entitle owners to a Planet Genesis'},
-    {image:'./assets/images/card4.png',title:'Phantom Galaxies Planet Auction', description:'These NFTs will be awarded for success in a Planet Sale auction, and entitle owners to a Planet Genesis'},
-    {image:'./assets/images/card1.png',title:'Phantom Galaxies Planet Auction', description:'These NFTs will be awarded for success in a Planet Sale auction, and entitle owners to a Planet Genesis'},
+    {image:'/assets/images/card1.png',title:'Phantom Galaxies Planet Auction', description:'These NFTs will be awarded for success in a Planet Sale auction, and entitle owners to a Planet Genesis'},
+    {image:'/assets/images/card2.png',title:'Phantom Galaxies Planet Auction', description:'These NFTs will be awarded for success in a Planet Sale auction, and entitle owners to a Planet Genesis'},
+    {image:'/assets/images/card3.png',title:'Phantom Galaxies Planet Auction', description:'These NFTs will be awarded for success in a Planet Sale auction, and entitle owners to a Planet Genesis'},
+    {image:'/assets/images/card4.png',title:'Phantom Galaxies Planet Auction', description:'These NFTs will be awarded for success in a Planet Sale auction, and entitle owners to a Planet Genesis'},
+    {image:'/assets/images/card1.png',title:'Phantom Galaxies Planet Auction', description:'These NFTs will be awarded for success in a Planet Sale auction, and entitle owners to a Planet Genesis'},
 ]
 // Collections
 export const CollectionsData = [
-    {image:'./assets/images/card1.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'./assets/images/card2.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'./assets/images/card3.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'./assets/images/card4.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'./assets/images/card1.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'./assets/images/card2.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'./assets/images/card3.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'./assets/images/card4.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},{image:'./assets/images/card1.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'./assets/images/card2.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'./assets/images/card3.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'./assets/images/card4.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {image:'/assets/images/card1.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {image:'/assets/images/card2.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {image:'/assets/images/card3.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {image:'/assets/images/card4.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {image:'/assets/images/card1.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {image:'/assets/images/card2.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {image:'/assets/images/card3.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {image:'/assets/images/card4.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},{image:'/assets/images/card1.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {image:'/assets/images/card2.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {image:'/assets/images/card3.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {image:'/assets/images/card4.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
 ];
 export const CollectionsCategories = [
     {id:1, title:'Trending'},
@@ -35,7 +35,7 @@ export const CollectionsCategories = [
 // end collections
 // Profile Data
 export const AccountProfileData = {
-    avatar:'./assets/images/profile-head.png',
+    avatar:'/assets/images/profile-head.png',
     name:'Dony Herrera',
     description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
     following:189,
@@ -53,8 +53,8 @@ export const PopularCreatorsData = [
         following:false,
         amount:12.91,
         style:'Top Creator',
-        cover:'./assets/images/creatorbg1.png',
-        avatar:'./assets/images/card1.png',
+        cover:'/assets/images/creatorbg1.png',
+        avatar:'/assets/images/card1.png',
     },
     {
         name:'Niamh O Shea',
@@ -62,8 +62,8 @@ export const PopularCreatorsData = [
         verified:false,
         amount:12.91,
         style:'Top Creator',
-        cover:'./assets/images/creatorbg2.png',
-        avatar:'./assets/images/card2.png',
+        cover:'/assets/images/creatorbg2.png',
+        avatar:'/assets/images/card2.png',
     },
     {
         name:'Niamh O Shea',
@@ -71,8 +71,8 @@ export const PopularCreatorsData = [
         following:false,
         amount:12.91,
         style:'Top Creator',
-        cover:'./assets/images/creatorbg3.png',
-        avatar:'./assets/images/card3.png',
+        cover:'/assets/images/creatorbg3.png',
+        avatar:'/assets/images/card3.png',
     },
     {
         name:'Niamh O Shea',
@@ -80,8 +80,8 @@ export const PopularCreatorsData = [
         following:true,
         amount:12.91,
         style:'Top Creator',
-        cover:'./assets/images/creatorbg4.png',
-        avatar:'./assets/images/card1.png',
+        cover:'/assets/images/creatorbg4.png',
+        avatar:'/assets/images/card1.png',
     },
     {
         name:'Niamh O Shea',
@@ -89,8 +89,8 @@ export const PopularCreatorsData = [
         following:true,
         amount:12.91,
         style:'Top Creator',
-        cover:'./assets/images/creatorbg5.png',
-        avatar:'./assets/images/card2.png',
+        cover:'/assets/images/creatorbg5.png',
+        avatar:'/assets/images/card2.png',
     },
     {
         name:'Niamh O Shea',
@@ -98,8 +98,8 @@ export const PopularCreatorsData = [
         following:true,
         amount:12.91,
         style:'Top Creator',
-        cover:'./assets/images/creatorbg6.png',
-        avatar:'./assets/images/card3.png',
+        cover:'/assets/images/creatorbg6.png',
+        avatar:'/assets/images/card3.png',
     }
 ]
 // end creators

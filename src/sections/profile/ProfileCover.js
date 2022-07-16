@@ -13,7 +13,7 @@ export default function ProfileCover() {
     const theme = useTheme();
     return (
     
-        <BackgroundImageStyle sx={{ backgroundImage: 'url(./assets/images/profilebg.png)', paddingX: { xs: 2, sm: 4, md: 8, lg: 20 }, paddingTop: 20, justifyContent: 'center', flexDirection:'column' }}>
+        <BackgroundImageStyle sx={{ backgroundImage: 'url(/assets/images/profilebg.png)', paddingX: { xs: 2, sm: 4, md: 8, lg: 20 }, paddingTop: 20, justifyContent: 'center', flexDirection:'column' }}>
             {/* Account Infomation Card */}
             <CardStyle sx={{ flexDirection: 'column', width: '100%', background: 'white', padding: 2, paddingX: 4, }}>
                 <Stack justifyContent={'end'} sx = {{mb:2}}>

@@ -56,9 +56,9 @@ export default function HomeHero() {
             <Grid item xs = {12} md={6} sm={12} sx={{ xs:{padding: '50px 0'},md:{paddingTop:0} }}>
                 <div style={{ position: 'relative'}}>
                     <Swiper {...SLIDER_SETTING} modules={[Navigation, EffectCoverflow]}>
-                        <SwiperSlide><img src='./assets/images/header1.png' alt='' width="100%" /></SwiperSlide>
-                        <SwiperSlide><img src='./assets/images/header2.png' alt='' width="100%"/></SwiperSlide>
-                        <SwiperSlide><img src='./assets/images/header3.png' alt='' width="100%"/></SwiperSlide>
+                        <SwiperSlide><img src='/assets/images/header1.png' alt='' width="100%" /></SwiperSlide>
+                        <SwiperSlide><img src='/assets/images/header2.png' alt='' width="100%"/></SwiperSlide>
+                        <SwiperSlide><img src='/assets/images/header3.png' alt='' width="100%"/></SwiperSlide>
                     </Swiper>
                     <Stack direction='row' pt={{xs:1,md:2}} justifyContent='center'>
                         <IconifyLink className="swiper-button-prev">
@@ -69,9 +69,9 @@ export default function HomeHero() {
                             <Icon icon='eva:arrow-forward-outline' width={30} style={{ marginLeft: -10 }} />
                         </IconifyLink>
                     </Stack>
-                    <img src='./assets/images/reddot-rec.png' alt='' className='absolute dots1' />
-                    <img src='./assets/images/reddot-ver.png' alt='' className='absolute dots2' />
-                    <img src='./assets/images/reddot-ver.png' alt='' className='absolute dots3' />
+                    <img src='/assets/images/reddot-rec.png' alt='' className='absolute dots1' />
+                    <img src='/assets/images/reddot-ver.png' alt='' className='absolute dots2' />
+                    <img src='/assets/images/reddot-ver.png' alt='' className='absolute dots3' />
                     
                 </div>
             </Grid>
