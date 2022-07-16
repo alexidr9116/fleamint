@@ -33,7 +33,7 @@ export const CollectionsCategories = [
     {id:10, title:'Virtual Worlds'}
 ]
 // end collections
-
+// Profile Data
 export const AccountProfileData = {
     avatar:'./assets/images/profile-head.png',
     name:'Dony Herrera',
@@ -44,3 +44,62 @@ export const AccountProfileData = {
     leaderColor:'brown',
     leaderLevel:'Bronze',
 }
+// end profile
+// Creators
+export const PopularCreatorsData = [
+    {
+        name:'Niamh O Shea',
+        verified:true,
+        following:false,
+        amount:12.91,
+        style:'Top Creator',
+        cover:'./assets/images/creatorbg1.png',
+        avatar:'./assets/images/card1.png',
+    },
+    {
+        name:'Niamh O Shea',
+        following:true,
+        verified:false,
+        amount:12.91,
+        style:'Top Creator',
+        cover:'./assets/images/creatorbg2.png',
+        avatar:'./assets/images/card2.png',
+    },
+    {
+        name:'Niamh O Shea',
+        verified:true,
+        following:false,
+        amount:12.91,
+        style:'Top Creator',
+        cover:'./assets/images/creatorbg3.png',
+        avatar:'./assets/images/card3.png',
+    },
+    {
+        name:'Niamh O Shea',
+        verified:true,
+        following:true,
+        amount:12.91,
+        style:'Top Creator',
+        cover:'./assets/images/creatorbg4.png',
+        avatar:'./assets/images/card1.png',
+    },
+    {
+        name:'Niamh O Shea',
+        verified:true,
+        following:true,
+        amount:12.91,
+        style:'Top Creator',
+        cover:'./assets/images/creatorbg5.png',
+        avatar:'./assets/images/card2.png',
+    },
+    {
+        name:'Niamh O Shea',
+        verified:true,
+        following:true,
+        amount:12.91,
+        style:'Top Creator',
+        cover:'./assets/images/creatorbg6.png',
+        avatar:'./assets/images/card3.png',
+    }
+]
+// end creators
