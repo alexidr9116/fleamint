@@ -33,3 +33,14 @@ export const CollectionsCategories = [
     {id:10, title:'Virtual Worlds'}
 ]
 // end collections
+
+export const AccountProfileData = {
+    avatar:'./assets/images/profile-head.png',
+    name:'Dony Herrera',
+    description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
+    following:189,
+    followers:120,
+    like:10,
+    leaderColor:'brown',
+    leaderLevel:'Bronze',
+}

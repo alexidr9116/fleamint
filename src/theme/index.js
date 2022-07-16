@@ -8,7 +8,6 @@ import { createTheme, ThemeProvider as MUIThemeProvider, StyledEngineProvider } 
 import palette from './palette';
 import typography from './typography';
 import breakpoints from './breakpoints';
-import componentsOverride from './overrides';
 import shadows, { customShadows } from './shadows';
 
 // ----------------------------------------------------------------------

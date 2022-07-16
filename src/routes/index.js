@@ -22,6 +22,15 @@ const Loadable = (Component) => (props) => {
 export default function Router() {
   return useRoutes([
     {
+      path: '/account',
+      element: <MainLayout />,
+      children: [
+        { element: <ProfilePage />, index: true },
+        { element: <Navigate to="/account" replace />, path: 'profile' },
+    
+      ],
+    },
+    {
       path: '/market-place',
       element: <MainLayout />,
       children: [
@@ -62,6 +71,9 @@ const BrandShowPage = Loadable(lazy(() => import('../pages/Brand')));
 
 // MARKET PLACES
 const NFTCategoriesPage = Loadable(lazy(() => import('../pages/marketplace/NFTCategories')));
+
+// ACOUNT ROUTES
+const ProfilePage = Loadable(lazy(() => import('../pages/account/Profile')));
 
 const Page500 = Loadable(lazy(() => import('../pages/Page500')));
 const Page403 = Loadable(lazy(() => import('../pages/Page403')));

@@ -15,3 +15,13 @@ export const BlankLink = styled('a')(({ theme, selected }) => (
         color: selected?theme.palette.primary.main:'black',
     }
 ));
+
+export const BackgroundImageStyle = styled('div')(({theme, sx})=>(
+    {
+        ...sx,
+        display:'flex',
+        width:'100%',
+        backgroundRepeat:'no-repeat',
+        backgroundSize:'cover',
+    }
+));
