@@ -12,9 +12,9 @@ const SearchBar = styled('div')(({ theme }) => ({
     "& input": {
         border: `1px solid ${theme.palette.primary.dark}`,
         borderRight:0,
-        width: '230px',
+        width: '300px',
         borderRadius:'8px 0px 0px 8px',
-         
+        paddingLeft:'10px', 
         "&:focus, &:active":{
             outline:'none',
         }

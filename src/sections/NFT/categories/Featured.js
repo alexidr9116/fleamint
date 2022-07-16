@@ -30,6 +30,7 @@ function FeaturedNFTsCarousel() {
     const theme = useTheme();
     return (
         <Stack>
+            {/* Featured NFT slider start */}
             <Slider ref={c => (setSlider(c))} {...SLIDER_SETTING}>
                 {AUTHORS.map((author, index) => (
                     <Box sx={{ position: 'relative', display: 'flex', flexDirection: { xs: 'column', md: 'row' } }} key={index}>
@@ -39,7 +40,7 @@ function FeaturedNFTsCarousel() {
                         <Box sx={{ position: { sm: 'absolute' }, left: { sm: '40%', lg: '42%' }, top: 0, height: '100%', display: 'flex', flexDirection: 'column' }} justifyContent={'center'}>
                             <Stack justifyContent='center' sx = {{padding:{xs:4}}}>
                                 <Box>
-                                    <CardStyle sx={{ padding: '8px 24px 8px 24px', background: 'white', flexDirection: 'column', gap: 2 }}>
+                                    <CardStyle sx={{ padding: '16px 24px 16px 24px', background: 'white', flexDirection: 'column', gap: 2 }}>
                                         <Typography variant="h6" sx={{ textAlign: 'center' }}>{author.title}</Typography>
                                         {/* Avatar */}
                                         <Stack direction='row' gap={2}>
@@ -92,7 +93,7 @@ function FeaturedNFTsCarousel() {
                 }
 
             </Slider>
-
+            {/* end nft slider  */}
         </Stack>
     )
 
