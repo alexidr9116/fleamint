@@ -57,6 +57,10 @@ export default function Router() {
         { element: <HomePage />, index: true },
         { element: <AboutUsPage />, path: 'about' },
         { element: <BrandShowPage />, path: 'brand' },
+        { element: <CreateNFTPage />, path: 'create-nft' },
+        { element: <NFTCollectionPage />, path: 'collections' },
+        
+
       ],
     },
     { path: '*', element: <Navigate to="/404" replace /> },
@@ -71,6 +75,8 @@ const BrandShowPage = Loadable(lazy(() => import('../pages/Brand')));
 
 // MARKET PLACES
 const NFTCategoriesPage = Loadable(lazy(() => import('../pages/marketplace/NFTCategories')));
+const CreateNFTPage = Loadable(lazy(() => import('../pages/CreateNFT')));
+const NFTCollectionPage = Loadable(lazy(() => import('../pages/NFTCollection')));
 
 // ACOUNT ROUTES
 const ProfilePage = Loadable(lazy(() => import('../pages/account/Profile')));

@@ -36,6 +36,6 @@ export const MenuRoutes = [
     },
     {
         title:'Create NFT',
-        path:'/nft'
+        path:'/create-nft'
     }
 ]

@@ -2,36 +2,7 @@ import { Icon } from "@iconify/react";
 import { styled, } from '@mui/material/styles';
 import { Container, Grid, Stack, Typography } from "@mui/material";
 import Image from "../components/Image";
-
-const SearchBar = styled('div')(({ theme }) => ({
-   
-    borderRadius: 8,
-    display: 'flex',
-    justifyContent:'space-between',
-    
-    "& input": {
-        border: `1px solid ${theme.palette.primary.dark}`,
-        borderRight:0,
-        width: '300px',
-        borderRadius:'8px 0px 0px 8px',
-        paddingLeft:'10px', 
-        "&:focus, &:active":{
-            outline:'none',
-        }
-    },
-    "& button": {
-        backgroundColor: theme.palette.primary.dark,
-        border:`1px solid ${theme.palette.primary.dark}`,
-        borderRadius:'0 8px 8px 0',
-        color:'white',
-        cursor:'pointer',
-        "&:hover":{
-            color:theme.palette.primary.dark,
-            backgroundColor: 'transparent',
-        },
-        transition: 'all 0.4s ease-in-out',
-    }
-}));
+import { SearchBar } from "../components/StyledComponents";
 
 export default function StayInLoop() {
     return (

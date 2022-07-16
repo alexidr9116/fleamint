@@ -1,22 +1,10 @@
 import { Button, Grid, Stack, Typography } from "@mui/material";
 import { styled, useTheme } from '@mui/material/styles';
 import { Box } from "@mui/system";
+import { RootStyle } from "../../components/StyledComponents";
 import Image from "../../components/Image";
 
 
-const RootStyle = styled('div')(({ theme, sx }) => ({
-    background: theme.palette.primary.dark,
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '4rem',
-
-    textAlign: 'center',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: 'white',
-    ...sx,
-    width: '100%',
-}));
 
 export default function HomeAvax() {
     const theme = useTheme();

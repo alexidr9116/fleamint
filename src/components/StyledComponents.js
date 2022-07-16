@@ -51,3 +51,48 @@ export const SelectStyle = styled('select')(({ theme, }) => (
         color: '#868686',
     }
 ));
+
+export const SearchBar = styled('div')(({ theme,sx }) => ({
+   
+    borderRadius: 8,
+    display: 'flex',
+    justifyContent:'space-between',
+    
+    "& input": {
+        border: `1px solid ${theme.palette.primary.dark}`,
+        borderRight:0,
+        width: '100%',
+        borderRadius:'8px 0px 0px 8px',
+        paddingLeft:'10px', 
+        "&:focus, &:active":{
+            outline:'none',
+        }
+    },
+    "& button": {
+        backgroundColor: theme.palette.primary.dark,
+        border:`1px solid ${theme.palette.primary.dark}`,
+        borderRadius:'0 8px 8px 0',
+        color:'white',
+        cursor:'pointer',
+        "&:hover":{
+            color:theme.palette.primary.dark,
+            backgroundColor: 'transparent',
+        },
+        transition: 'all 0.4s ease-in-out',
+    },
+    ...sx,
+}));
+
+export const RootStyle = styled('div')(({ theme, sx }) => ({
+    background: theme.palette.primary.dark,
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '4rem',
+
+    textAlign: 'center',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: 'white',
+    ...sx,
+    width: '100%',
+}));
