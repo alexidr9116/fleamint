@@ -31,8 +31,8 @@ export default function ProfileCover() {
                             <Stack gap={2} sx={{ mb: 2 }}>
                                 <Stack direction={{xs:'column',sm:'column', md: 'column', lg: 'row' }} justifyContent={'space-between'}>
                                     <Stack direction='row' gap={1} alignItems={'center'}>
-                                        <Typography variant="h3">{AccountProfileData.name}</Typography>
-                                        <Icon icon='ei:trophy' width={40} color={AccountProfileData.leaderColor} />
+                                        <Typography variant="h3" sx ={{py:2}}>{AccountProfileData.name}</Typography>
+                                        <Icon icon='ei:trophy' width={40} color={AccountProfileData.leaderColor}sx ={{mb:2}} />
                                         <Typography color={AccountProfileData.leaderColor} sx={{ marginLeft: -2 }}>({AccountProfileData.leaderLevel})</Typography>
                                     </Stack>
                                     <Stack direction={{xs:'column',sm:"row"}} gap={2}>
@@ -42,9 +42,9 @@ export default function ProfileCover() {
                                 </Stack>
                             </Stack>
                             {/* description */}
-                            <Typography color="gray" sx={{ mb: 2 }}>{AccountProfileData.description}</Typography>
+                            <Typography color="gray" sx={{ py: 2 }}>{AccountProfileData.description}</Typography>
                             {/* Followers */}
-                            <Stack direction={{ md: 'row', sm: 'column', xs: 'column'}}  justifyContent="space-between" ml={{lg:0, md:-10,sm:-10}}>
+                            <Stack direction={{ md: 'row', sm: 'column', xs: 'column'}}  justifyContent="space-between" ml={{lg:0, md:-10,sm:0}}>
                                 <Stack justifyContent={'space-between'} direction="row" padding={2} sx={{ borderRadius: 1, background: '#f5585b1a' }} gap={3}>
                                     <Typography component={'p'} variant="h4">
                                         {AccountProfileData.following}<br />
