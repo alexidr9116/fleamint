@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import { IconButton,Typography } from "@mui/material";
 import { Box, styled } from "@mui/material/styles";
 import PropTypes from 'prop-types';
@@ -16,6 +17,7 @@ const RootStyle = styled('div')(({theme,height, color})=>({
     overflow:'hidden',
     color,
     alignItems:'center',
+    cursor:'pointer',
     
 }));
 
@@ -25,10 +27,11 @@ export default function TextSpinBox({values,color, variant}){
         setIndex((index+1)>=values.length ? 0: (index+1));
     }
     return(
-        <RootStyle height = {'3rem'} color ={color} onClick = {handleNext}>
+        <RootStyle height = {variant==='h3'?'3rem':'2.25rem'} color ={color} onClick = {handleNext}>
             <Typography variant = {variant}>
                 {values[index].label}
             </Typography>
+            <Icon icon = "akar-icons:chevron-down" width = {variant==='h3'?30:20}/>
             
         </RootStyle>
     )
