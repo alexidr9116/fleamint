@@ -14,15 +14,16 @@ MobileDrawer.propTypes = {
 
 const AccordionStyle = styled((props) => (
     <Accordion disableGutters elevation={0} square {...props} />
-  ))(({ theme }) => ({
+))(({ theme }) => ({
     borderBottom: `1px solid ${theme.palette.divider}`,
+
     '&:not(:last-child)': {
-      borderBottom: 0,
+        borderBottom: 0,
     },
     '&:before': {
-      display: 'none',
+        display: 'none',
     },
-  }));
+}));
 
 export default function MobileDrawer({ open, handleClose }) {
     return (
@@ -32,29 +33,31 @@ export default function MobileDrawer({ open, handleClose }) {
                     <React.Fragment key={index}>
 
                         {menu.elements && menu.elements.length >= 1 &&
-                            <AccordionStyle>
-                                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                                    <Typography>{menu.title}</Typography>
+                            <Box sx={{ mb:1  }}>
+                                <AccordionStyle>
+                                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                                        <Typography>{menu.title}</Typography>
 
-                                </AccordionSummary>
-                                <AccordionDetails>
-                                    {menu.elements.map((sub, subIndex) => (
-                                        <MenuItem key={`sub-${subIndex}`}>
-                                            <RouterLink to={sub.path} >{sub.title}</RouterLink>
-                                        </MenuItem>
-                                    ))}
-                                </AccordionDetails>
-                            </AccordionStyle>}
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                        {menu.elements.map((sub, subIndex) => (
+                                            <MenuItem key={`sub-${subIndex}`}>
+                                                <RouterLink to={sub.path} >{sub.title}</RouterLink>
+                                            </MenuItem>
+                                        ))}
+                                    </AccordionDetails>
+                                </AccordionStyle>
+
+                            </Box>}
                         {(!menu.elements || menu.elements.length === 0) &&
                             <>
 
-                                <MenuItem>
+                                <MenuItem sx={{ paddingTop: 1 }}>
                                     <RouterLink to={menu.path}>{menu.title}</RouterLink>
                                 </MenuItem>
-
+                                <Divider sx={{ magin: 0, height: '1px' }} />
                             </>
                         }
-                        <Divider sx = {{magin:0}}/>
 
                     </React.Fragment>
                 ))}

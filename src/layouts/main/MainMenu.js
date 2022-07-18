@@ -2,12 +2,11 @@ import { Button, IconButton, Stack } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
-import { MenuRoutes } from "../../_mock/MenuItems";
-import Iconify from "../../components/Iconify";
-import useResponsive from "../../hooks/useResponsive";
-import RouterLink from "../../components/RouterLink";
+import { MenuRoutes } from "../../_mock/MenuItems"; 
+import useResponsive from "../../hooks/useResponsive"; 
 import DropdownMenu from "../../components/DropdownMenu";
 import MobileDrawer from "./MobileDrawer";
+import ConnectWallet from "../../pages/ConnectWallet";
 
 const MenuAction = styled('div')(({ theme }) => ({
 
@@ -20,6 +19,10 @@ const MenuAction = styled('div')(({ theme }) => ({
 export default function MainMenu() {
     const isMobile = useResponsive('down', 'md');
     const [open, setOpen] = useState(false)
+    const [openWallet, setOpenWallet] = useState(false);
+    const handleCloseWallet = () => {
+        setOpenWallet(false);
+    }
     const openDrawer = () => {
         setOpen(true);
 
@@ -32,7 +35,9 @@ export default function MainMenu() {
             {!isMobile && MenuRoutes.map((menu, index) => (
                 <DropdownMenu key={index} menu={menu} />
             ))}
-            <Button variant="contained" sx={{ paddingX: 4 }}>Wallet</Button>
+            <Button variant="contained" sx={{ paddingX: 4 }} onClick={() => {
+                setOpenWallet(true);
+            }}>Wallet</Button>
             {isMobile &&
                 <>
                     <IconButton onClick={openDrawer}>
@@ -42,7 +47,7 @@ export default function MainMenu() {
                 </>
 
             }
-
+            <ConnectWallet open={openWallet} handleClose={handleCloseWallet} />
         </Stack>
     )
 }
