@@ -10,11 +10,11 @@ import { PerfomanceData } from "../../_mock/MockData";
 
 export default function RealTable() {
     return (
-        <Stack gap={2} >
+        <Stack gap={2} sx ={{mb:4}} >
             <Typography variant="h4">Analytics Performance</Typography>
-            <Card sx={{ width: '100%' }}>
+            <Card sx={{ width: '100%',background:"#ffffff80" }}>
                 <CardContent >
-                    <NormalTableStyle cellpadding={0} cellspacing={0}>
+                    <NormalTableStyle cellPadding={0} cellSpacing={0}>
                         <thead>
                             <tr>
                                 <th>Sort</th>
