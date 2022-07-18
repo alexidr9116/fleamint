@@ -42,7 +42,7 @@ export default function ProfileCover() {
                                 </Stack>
                             </Stack>
                             {/* description */}
-                            <Typography color="gray" sx={{ py: 2 }}>{AccountProfileData.description}</Typography>
+                            <Typography color="gray" paddingY={{xs:2, lg:1}}>{AccountProfileData.description}</Typography>
                             {/* Followers */}
                             <Stack direction={{ md: 'row', sm: 'column', xs: 'column'}}  justifyContent="space-between" ml={{lg:0, md:-10,sm:0}}>
                                 <Stack justifyContent={'space-between'} direction="row" padding={2} sx={{ borderRadius: 1, background: '#f5585b1a' }} gap={3}>
