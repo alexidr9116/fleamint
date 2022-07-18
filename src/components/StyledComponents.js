@@ -40,7 +40,7 @@ export const ToggoleButton = styled('div')(({ theme, selected }) => (
     }
 ));
 
-export const SelectStyle = styled('select')(({ theme, }) => (
+export const SelectStyle = styled('select')(({ theme,sx}) => (
     {
         outline: 'none',
         border: '1px solid #E5E5E5',
@@ -49,6 +49,7 @@ export const SelectStyle = styled('select')(({ theme, }) => (
         fontSize: '16px',
         fontWeight: 400,
         color: '#868686',
+        ...sx,
     }
 ));
 
