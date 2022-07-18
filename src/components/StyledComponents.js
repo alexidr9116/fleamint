@@ -153,7 +153,7 @@ export const NormalTableStyle = styled('table')(({ theme, sx }) => ({
         borderRight: `1px solid #ccc`,
 
     },
-    "& tbody tr td:first-child,& thead tr th:first-child": {
+    "& tbody tr td:first-of-type, & thead tr th:first-of-type": {
         borderLeft: `1px solid #ccc`,
     },
     "& tbody tr td img": {

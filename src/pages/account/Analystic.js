@@ -19,10 +19,10 @@ export default function Analystics() {
                         <RealTable />
                         <AvgSessionChart />
                         <Grid container>
-                            <Grid item  xs ={12} sm={12} md={6} sx  ={{paddingRight:2}}>
+                            <Grid item  xs ={12} sm={12} md={6} sx  ={{paddingRight:{md:2,xs:0, sm:0}, mb:4}}>
                                 <WorldMapSVG />
                             </Grid>
-                            <Grid item  xs ={12} sm={12} md={6} sx  ={{paddingLeft:2}}>
+                            <Grid item  xs ={12} sm={12} md={6} sx  ={{paddingLeft:{md:2,xs:0, sm:0}, mb:4}}>
                                 <Top5CountriesChart />
                             </Grid>
                         </Grid>
