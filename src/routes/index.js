@@ -41,6 +41,8 @@ export default function Router() {
         { element: <Navigate to="/market-place" replace />, path: 'nft' },
         { element: <NFTCategoriesPage />, path: 'categories' },
         { element: <LeaderBoardPage />, path: 'leader-board' },
+        { element: <ProductDetailPage />, path: 'product-detail' },
+
       ],
     },
     // Main Routes
@@ -63,7 +65,7 @@ export default function Router() {
         { element: <BrandShowPage />, path: 'brand' },
         { element: <CreateNFTPage />, path: 'create-nft' },
         { element: <NFTCollectionPage />, path: 'collections' },
-
+        { element: <BlogPage />, path: 'blogs' },
 
       ],
     },
@@ -81,6 +83,10 @@ const BrandShowPage = Loadable(lazy(() => import('../pages/Brand')));
 const NFTCategoriesPage = Loadable(lazy(() => import('../pages/marketplace/NFTCategories')));
 const LeaderBoardPage = Loadable(lazy(() => import('../pages/marketplace/LeaderBoards')));
 const NFTMarketplacePage = Loadable(lazy(() => import('../pages/marketplace/NFTMarketplace')));
+const ProductDetailPage =  Loadable(lazy(() => import('../pages/marketplace/ProductDetail')));
+
+// BLOGS
+const BlogPage =  Loadable(lazy(() => import('../pages/Blog')));
 
 const CreateNFTPage = Loadable(lazy(() => import('../pages/CreateNFT')));
 const NFTCollectionPage = Loadable(lazy(() => import('../pages/NFTCollection')));

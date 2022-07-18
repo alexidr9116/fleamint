@@ -118,3 +118,42 @@ export const PerfomanceData = [
         searcher:{direction:'down',amount:2546},user:{direction:'up',amount:12},session:{direction:'up',amount:12},avg:{direction:'down',amount:12},news:{direction:'up',amount:12},goal:{direction:'up',amount:12},paper:{direction:'down',amount:12},view:{direction:'up',amount:12}
     },
 ]
+
+export const BLOGS_DATA = [
+    {
+        title:'Introduction Seaport Protocol',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        posted:'May 20, 2022',
+    },
+    {
+        title:'Introduction Seaport Protocol',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        posted:'May 20, 2022',
+    },
+    {
+        title:'Introduction Seaport Protocol',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        posted:'May 20, 2022',
+    },
+    {
+        title:'Introduction Seaport Protocol',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        posted:'May 20, 2022',
+    },
+    {
+        title:'Introduction Seaport Protocol',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        posted:'May 20, 2022',
+    },
+    {
+        title:'Introduction Seaport Protocol',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        posted:'May 20, 2022',
+    },
+    {
+        title:'Introduction Seaport Protocol',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        posted:'May 20, 2022',
+    }
+    
+]
