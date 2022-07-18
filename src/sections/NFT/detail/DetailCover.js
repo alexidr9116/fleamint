@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Container, Divider, Grid, ListItem, ListItemAvatar, ListItemText, Stack, TextField, Typography, useTheme } from "@mui/material";
+import { Avatar, Box, Button, Container, Divider, Grid, List, ListItem, ListItemAvatar, ListItemText, Stack, TextField, Typography, useTheme } from "@mui/material";
 
 export default function DetailCover() {
     const theme = useTheme();
@@ -6,7 +6,7 @@ export default function DetailCover() {
         <Container>
             <Grid container>
                 <Grid item xs={12} sm={6}>
-                    <Stack gap={2} sx={{ padding: 2 }}>
+                    <Stack gap={2} sx={{ padding: 2, paddingRight:{xs:2,md:4} }}>
                         <img width="100%" src='/assets/images/image 129.png' alt='' />
                         <Typography variant={'h4'}>
                             Descriptions
@@ -33,7 +33,7 @@ export default function DetailCover() {
                 </Grid>
                 <Grid item xs={12} sm={6}>
                    
-                    <Stack sx={{ padding: 2 }} gap={2}>
+                    <Stack sx={{ padding: 2, }} gap={2}>
                          {/* Avatar */}
                         <Typography variant={'h4'}>
                             BearX #3636
@@ -101,6 +101,72 @@ export default function DetailCover() {
                         <Stack direction='row' gap={1} justifyContent='space-between' alignItems={'end'}>
                             <Button size="large" color = 'error' variant = 'contained' fullWidth>Place Bid</Button>
                             <Button size="large" color = 'error' variant = "outlined" fullWidth>Make Offer</Button>
+                        </Stack>
+                        <Divider  variant="middle" flexItem sx={{mb:4}} />
+                        <Typography variant ="h6" >
+                            <u>Bid History</u>
+                        </Typography>
+                        {/* bid history */}
+                        <Stack gap={1}>
+                            <Stack direction = "row" justifyContent={'space-between'} alignItems='center'>
+                                <Stack gap={1} direction = 'row' alignItems='center' justifyContent={'center'}>
+                                    <Avatar sx ={{width:48, height:48}}>
+                                        <img src = '/assets/images/image 132.png' alt = '' />
+                                    </Avatar>
+                                    <Typography color = "gray">
+                                        Placed a bid $1500 by 
+                                    </Typography>
+                                    <Typography >
+                                        <b>John Doe</b>
+                                    </Typography>
+                                </Stack>
+                                <Typography color = 'gray'>Jun 14 - 4:12 PM</Typography>
+                            </Stack>
+                            <Divider  variant="fullWidth" flexItem   />
+                            <Stack direction = "row" justifyContent={'space-between'} alignItems='center'>
+                                <Stack gap={1} direction = 'row' alignItems='center' justifyContent={'center'}>
+                                    <Avatar sx ={{width:48, height:48}}>
+                                        <img src = '/assets/images/image 133.png' alt = '' />
+                                    </Avatar>
+                                    <Typography color = "gray">
+                                        Placed a bid $1500 by 
+                                    </Typography>
+                                    <Typography >
+                                        <b>John Doe</b>
+                                    </Typography>
+                                </Stack>
+                                <Typography color = 'gray'>Jun 14 - 4:12 PM</Typography>
+                            </Stack>
+                            <Divider  variant="fullWidth" flexItem   />
+                            <Stack direction = "row" justifyContent={'space-between'} alignItems='center'>
+                                <Stack gap={1} direction = 'row' alignItems='center' justifyContent={'center'}>
+                                    <Avatar sx ={{width:48, height:48}}>
+                                        <img src = '/assets/images/image 134.png' alt = '' />
+                                    </Avatar>
+                                    <Typography color = "gray">
+                                        Placed a bid $1500 by 
+                                    </Typography>
+                                    <Typography >
+                                        <b>John Doe</b>
+                                    </Typography>
+                                </Stack>
+                                <Typography color = 'gray'>Jun 14 - 4:12 PM</Typography>
+                            </Stack>
+                            <Divider  variant="fullWidth" flexItem   />
+                            <Stack direction = "row" justifyContent={'space-between'} alignItems='center'>
+                                <Stack gap={1} direction = 'row' alignItems='center' justifyContent={'center'}>
+                                    <Avatar sx ={{width:48, height:48}}>
+                                        <img src = '/assets/images/image 135.png' alt = '' />
+                                    </Avatar>
+                                    <Typography color = "gray">
+                                        Placed a bid $1500 by 
+                                    </Typography>
+                                    <Typography >
+                                        <b>John Doe</b>
+                                    </Typography>
+                                </Stack>
+                                <Typography color = 'gray'>Jun 14 - 4:12 PM</Typography>
+                            </Stack>
                         </Stack>
                     </Stack>
                     
