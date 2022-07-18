@@ -30,6 +30,7 @@ export default function Router() {
         { element: <EditProfilePage />, path: 'edit' },
         { element: <AnalysticPage />, path: 'analystic' },
         { element: <HelpCenterPage />, path: 'help' },
+        { element: <CreateLeadPage />, path: 'brand' },
       ],
     },
     {
@@ -86,6 +87,7 @@ const ProfilePage = Loadable(lazy(() => import('../pages/account/Profile')));
 const EditProfilePage = Loadable(lazy(() => import('../pages/account/EditProfile')));
 const AnalysticPage = Loadable(lazy(() => import('../pages/account/Analystic')));
 const HelpCenterPage = Loadable(lazy(() => import('../pages/account/HelpCenter')));
+const CreateLeadPage = Loadable(lazy(() => import('../pages/account/CreateLead')));
 
 const Page500 = Loadable(lazy(() => import('../pages/Page500')));
 const Page403 = Loadable(lazy(() => import('../pages/Page403')));
