@@ -4,37 +4,16 @@ import { Avatar, Box, Button, Container, Divider, Grid, List, ListItem, ListItem
 export default function DetailCover() {
     const theme = useTheme();
     return (
-
         <Grid container sx={{ mb: 4 }}>
             <Grid item xs={12} sm={6}>
                 <Stack gap={2} sx={{ padding: 2, paddingRight: { xs: 2, md: 4 } }}>
-                    <img width="100%" src='/assets/images/image 129.png' alt='' />
-                    <Typography variant={'h4'}>
-                        Descriptions
-                    </Typography>
-                    <Typography color='gray'>
-                        Tattooed Kitty Gang (“TKG”) is a collection of 666 badass kitty gangsters, with symbol of tattoos, living in the Proud Kitty Gang (“PKG”) metaverse. Each TKG is an 1/1 ID as gangster member & all the joint rights.
-                    </Typography>
-                    <Typography variant={'h4'}>
-                        Detail
-                    </Typography>
-                    <Typography >
-                        2000X2000 px.IMAGE(685KB)
-                    </Typography>
-                    <Typography variant={'h6'}>Contaract Address</Typography>
-                    <Typography color='gray'>
-                        0x1123455678990123495
-                    </Typography>
-                    <Typography variant={'h6'}>Token ID</Typography>
-                    <Typography color='gray'>
-                        12341223213241
-                    </Typography>
+                    <img height="100%" src='/assets/images/image 129.png' alt='' />
+
                 </Stack>
 
             </Grid>
             <Grid item xs={12} sm={6}>
-
-                <Stack sx={{ padding: 2, }} gap={2}>
+                <Stack gap={{sm:1, xs:1, md:2, lg:3}} sx={{ padding: 2 }}>
                     {/* Avatar */}
                     <Typography variant={'h4'}>
                         BearX #3636
@@ -84,7 +63,7 @@ export default function DetailCover() {
                         </Box>
                     </Stack>
                     <Divider variant="middle" flexItem />
-                    <Stack direction='row' gap={1} justifyContent='space-between' alignItems={'end'}>
+                    <Stack direction='row' mb={4} gap={1} justifyContent='space-between' alignItems={'end'}>
                         <TextField
                             InputProps={{
                                 readOnly: true,
@@ -103,6 +82,39 @@ export default function DetailCover() {
                         <Button size="large" color='error' variant='contained' fullWidth>Place Bid</Button>
                         <Button size="large" color='error' variant="outlined" fullWidth>Make Offer</Button>
                     </Stack>
+                </Stack>
+
+            </Grid>
+
+            <Grid item xs={12} sm={6}>
+                <Stack gap={2} sx={{ padding: 2, paddingRight: { xs: 2, md: 4 } }}>
+                    <Typography variant={'h4'}>
+                        Descriptions
+                    </Typography>
+                    <Typography color='gray'>
+                        Tattooed Kitty Gang (“TKG”) is a collection of 666 badass kitty gangsters, with symbol of tattoos, living in the Proud Kitty Gang (“PKG”) metaverse. Each TKG is an 1/1 ID as gangster member & all the joint rights.
+                    </Typography>
+                    <Typography variant={'h4'}>
+                        Detail
+                    </Typography>
+                    <Typography >
+                        2000X2000 px.IMAGE(685KB)
+                    </Typography>
+                    <Typography variant={'h6'}>Contaract Address</Typography>
+                    <Typography color='gray'>
+                        0x1123455678990123495
+                    </Typography>
+                    <Typography variant={'h6'}>Token ID</Typography>
+                    <Typography color='gray'>
+                        12341223213241
+                    </Typography>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={12} sm={6}>
+
+                <Stack sx={{ padding: 2, }} gap={2}>
+
                     <Divider variant="middle" flexItem sx={{ mb: 4 }} />
                     <Typography variant="h6" >
                         <u>Bid History</u>
@@ -170,11 +182,7 @@ export default function DetailCover() {
                         </Stack>
                     </Stack>
                 </Stack>
-
-
             </Grid>
         </Grid>
-
-
     )
 }

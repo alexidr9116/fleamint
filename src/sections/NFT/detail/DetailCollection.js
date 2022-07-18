@@ -17,7 +17,7 @@ export default function DetailCollection() {
 
             </Grid>
             <Stack alignItems={'center'}>
-                <Button variant="outlined" color="error">View More</Button>
+                <Button variant="contained" color="error">View More</Button>
             </Stack>
         </>
     )
