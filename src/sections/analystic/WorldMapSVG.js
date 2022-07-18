@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Stack, Typography } from "@mui/material";
+import { Box, Card, CardContent, Divider, Stack, Typography } from "@mui/material";
 import WorldMap from "react-svg-worldmap";
 
 export default function WorldMapSVG() {
@@ -18,7 +18,9 @@ export default function WorldMapSVG() {
                     <Typography variant = "h5">Goal Completions By Countries </Typography>
 
                     <Typography variant = "h6">Last 30 Days</Typography>
+                    
                 </Stack>
+                <Divider />
                 <CardContent >
                     <WorldMap size="lg" color="red" data = {data} title="" />
                 </CardContent>
