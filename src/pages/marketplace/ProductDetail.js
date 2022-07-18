@@ -1,4 +1,5 @@
 import { Container } from "@mui/material";
+import DetailCover from "../../sections/NFT/detail/DetailCover";
 import Page from "../../components/Page";
 import { GradientStyle } from "../Home";
 
@@ -7,7 +8,7 @@ export default function ProductDetail(){
         <Page title="Help Center">
             <GradientStyle sx={{ paddingTop: { xs: 15, sm: 20 }, paddingBottom: 4, display: 'flex', gap: 8, flexDirection: 'column' }} >
                 <Container >
-                    adfa
+                    <DetailCover />
                 </Container>
             </GradientStyle>
         </Page>
