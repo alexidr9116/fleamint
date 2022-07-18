@@ -13,7 +13,7 @@ const CHAT_DATA = {
     options: {
         chart: {
             type: 'bar',
-            height: 350
+            height: 400
         },
         plotOptions: {
             bar: {
@@ -53,7 +53,7 @@ export default function Top5CountriesChart() {
         <Box>
              <Card sx={{ width: '100%', background:"#ffffff80" }}>
                 <CardContent >
-                    <ApexCharts options={CHAT_DATA.options} series={CHAT_DATA.series} type="bar" height={350} />
+                    <ApexCharts options={CHAT_DATA.options} series={CHAT_DATA.series} type="bar" height={445} />
                 </CardContent>
             </Card>
         </Box>
