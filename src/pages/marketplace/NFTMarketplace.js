@@ -17,7 +17,7 @@ export default function NFTMarketplace() {
                     <Stack gap={4} alignItems={'center'} sx={{ mb: { xs: 4, sm: 8 } }}>
                         <Typography variant="h4">Create And Sell Your <span color={theme.palette.primary.dark}>NFTs</span></Typography>
                         <Grid container sx={{ background: 'url(/assets/images/market-place-dot-bg.png)', backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'center' }}>
-                            <Grid item xs={6} md={3} sx={{ padding: 1 }}>
+                            <Grid item xs={12} sm={6} md={3} sx={{ padding: 1 }}>
                                 <Box gap={1} display={'flex'} flexDirection={"column"} sx={{ alignItems: 'center' }}>
                                     <div><img src="/assets/images/image 74.png" alt='' /></div>
                                     <Typography variant={'h5'}>Set up Your Wallet </Typography>
@@ -25,7 +25,7 @@ export default function NFTMarketplace() {
                                     </Typography>
                                 </Box>
                             </Grid>
-                            <Grid item xs={6} md={3} sx={{ padding: 1 }}>
+                            <Grid item xs={12} sm={6} md={3} sx={{ padding: 1 }}>
                                 <Box gap={1} display={'flex'} flexDirection={"column"} sx={{ alignItems: 'center' }}>
                                     <div><img src="/assets/images/image 75.png" alt='' /></div>
                                     <Typography variant={'h5'}>Create Your Collection </Typography>
@@ -33,7 +33,7 @@ export default function NFTMarketplace() {
                                     </Typography>
                                 </Box>
                             </Grid>
-                            <Grid item xs={6} md={3} sx={{ padding: 1 }}>
+                            <Grid item  xs={12} sm={6} md={3}  sx={{ padding: 1 }}>
                                 <Box gap={1} display={'flex'} flexDirection={"column"} sx={{ alignItems: 'center' }}>
                                     <div><img src="/assets/images/image 76.png" alt='' /></div>
                                     <Typography variant={'h5'}>Add Your NFTs </Typography>
@@ -41,7 +41,7 @@ export default function NFTMarketplace() {
                                     </Typography>
                                 </Box>
                             </Grid>
-                            <Grid item xs={6} md={3} sx={{ padding: 1 }}>
+                            <Grid item xs={12} sm={6} md={3}  sx={{ padding: 1 }}>
                                 <Box gap={1} display={'flex'} flexDirection={"column"} sx={{ alignItems: 'center' }}>
                                     <div><img src="/assets/images/image 77.png" alt='' /></div>
                                     <Typography variant={'h5'}>List Them For Sale </Typography>
