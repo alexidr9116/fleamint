@@ -1,11 +1,11 @@
 import { Avatar, Box, Button, Container, FormControlLabel, Grid, Stack, Switch, TextField, Typography } from "@mui/material";
 import { Icon } from "@iconify/react";
 
-import Page from "../components/Page";
-import { CardStyle, GradientStyle } from "./Home";
-import UploadNFTs from "../components/UploadNFT";
-import { SelectStyle } from "../components/StyledComponents";
-import Iconify from "../components/Iconify";
+import Page from "../../components/Page";
+import { CardStyle, GradientStyle } from "../Home";
+import UploadNFTs from "../../components/UploadNFT";
+import { SelectStyle } from "../../components/StyledComponents";
+import Iconify from "../../components/Iconify";
 
 export default function CreateNFT() {
     return (

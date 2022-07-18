@@ -1,9 +1,10 @@
 import { Button, Box, Grid, Stack, Typography } from "@mui/material";
 import { useTheme } from '@mui/material/styles';
 import Slider from 'react-slick';
+import SliderWrapper from "../../components/SlickSliderStyle";
 import { NotableDropsData } from "../../_mock/MockData";
 import Image from "../../components/Image";
-import SliderWrapper from "../../components/SlickSliderStyle";
+
 
 
 const SLICK_SETTING = {
@@ -12,7 +13,7 @@ const SLICK_SETTING = {
     autoplay: true,
     autoplaySpeed: 5000,
     speed: 500,
-    slidesToShow: 4, 
+    slidesToShow: 4,
     initialSlide: 0,
     responsive: [
         {
@@ -39,9 +40,9 @@ const SLICK_SETTING = {
     ],
     appendDots: dots => <ul>{dots}</ul>,
     customPaging: i => (
-      <div className="ft-slick__dots--custom">
-        <div className="loading" />
-      </div>
+        <div className="ft-slick__dots--custom">
+            <div className="loading" />
+        </div>
     )
 }
 
@@ -55,20 +56,20 @@ export default function HomeNotableDrops() {
             </Box>
             {/* carousel */}
             <Box>
-            <SliderWrapper>
-                <Slider {...SLICK_SETTING}>
-                    {NotableDropsData.map((data, index) => (
-                        <div key = {index}>
-                            <Box sx={{ gap: 2, padding:2}}>
-                                <Image src={`${data.image}`} alt='' />
-                                <Typography variant ='h5'>{data.title}</Typography>
-                                <Typography  color = 'gray'>{data.description}</Typography>
-                            </Box>
-                        </div>
-                    ))}
+                <SliderWrapper>
+                    <Slider {...SLICK_SETTING}>
+                        {NotableDropsData.map((data, index) => (
+                            <div key={index}>
+                                <Box sx={{ gap: 2, padding: 2 }}>
+                                    <Image src={`${data.image}`} alt='' />
+                                    <Typography variant='h5'>{data.title}</Typography>
+                                    <Typography color='gray'>{data.description}</Typography>
+                                </Box>
+                            </div>
+                        ))}
 
-                </Slider>
-            </SliderWrapper>
+                    </Slider>
+                </SliderWrapper>
             </Box>
 
         </Box>

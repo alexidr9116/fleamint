@@ -18,7 +18,7 @@ export const MenuRoutes = [
             {title:'NFT Categories',path:'/market-place/categories'},
             {title:'Leader Board',path:'/market-place/leader-board'},
             {title:'NFT Marketplace',path:'/market-place/nft'},
-            
+            {title:'NFT Create',path:'/market-place/create-nft'},
         ]
     },
     {
@@ -37,7 +37,7 @@ export const MenuRoutes = [
         ]
     },
     {
-        title:'Create NFT',
-        path:'/create-nft'
+        title:'Blogs',
+        path:'/blogs'
     }
 ]
