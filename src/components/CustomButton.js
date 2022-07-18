@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { styled } from "@mui/material";
 
-const CustomButtonStyle = styled('button')(({ theme, size,}) => ({
+const CustomButtonStyle = styled('button')(({ theme, sx,size}) => ({
     border: `1px solid ${theme.palette.primary.main}`,
     backgroundColor: 'transparent',
     borderRadius: 8,
@@ -16,7 +16,7 @@ const CustomButtonStyle = styled('button')(({ theme, size,}) => ({
         backgroundColor: theme.palette.primary.main,
     },
     transition: 'all 0.4s ease-in-out',
-    
+    ...sx,
 }));
 
 CustomButton.propTypes = {
@@ -26,6 +26,6 @@ CustomButton.propTypes = {
 }
 export default function CustomButton({sx, size, children}) {
     return(
-        <CustomButtonStyle {...sx} size = {size}>{children}</CustomButtonStyle>
+        <CustomButtonStyle sx =  {sx} size = {size}>{children}</CustomButtonStyle>
     )
 }

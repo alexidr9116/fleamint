@@ -35,9 +35,9 @@ export default function ProfileCover() {
                                         <Icon icon='ei:trophy' width={40} color={AccountProfileData.leaderColor}sx ={{mb:2}} />
                                         <Typography color={AccountProfileData.leaderColor} sx={{ marginLeft: -2 }}>({AccountProfileData.leaderLevel})</Typography>
                                     </Stack>
-                                    <Stack direction={{xs:'column',sm:"row"}} gap={2}>
-                                        <CustomButton>View My Ranking</CustomButton>
-                                        <Button variant="contained">Edit Profile</Button>
+                                    <Stack direction={{xs:'column',sm:"row"}} alignItems="center" gap={2}>
+                                        <CustomButton sx = {{height:40}}>View My Ranking</CustomButton>
+                                        <Button  sx = {{height:40}} variant="contained">Edit Profile</Button>
                                     </Stack>
                                 </Stack>
                             </Stack>
@@ -48,22 +48,21 @@ export default function ProfileCover() {
                                 <Stack justifyContent={'space-between'} direction="row" padding={2} sx={{ borderRadius: 1, background: '#f5585b1a' }} gap={3}>
                                     <Typography component={'p'} variant="h4">
                                         {AccountProfileData.following}<br />
-                                        <small style={{ color: 'gray', fontWeight: 400 }}>Following</small>
+                                        <small style={{ color: 'gray', fontWeight: 400, fontSize:16 }}>Following</small>
                                     </Typography>
                                     <Typography component={'p'} variant="h4">
                                         {AccountProfileData.followers}<br />
-                                        <small style={{ color: 'gray', fontWeight: 400 }}>Followers</small>
+                                        <small style={{ color: 'gray', fontWeight: 400, fontSize:16 }}>Followers</small>
                                     </Typography>
                                     <Typography component={'p'} variant="h4">
                                         {AccountProfileData.like}<br />
-                                        <small style={{ color: 'gray', fontWeight: 400 }}>Like</small>
+                                        <small style={{ color: 'gray', fontWeight: 400, fontSize:16 }}>Like</small>
                                     </Typography>
                                 </Stack>
                                 <Stack direction="row" sx = {{paddingY:4}} gap={1}>
                                     <IconfyButton icon='bxl:twitter' width={30} />
                                     <IconfyButton icon='gg:facebook' width={30}/>
                                     <IconfyButton icon='icon-park-solid:instagram-one' width={30}/>
-                                    <IconfyButton icon='bxs:camera' width={30}/>
                                     <IconfyButton icon='bxl:discord-alt' width={30}/>
                                 </Stack>
                             </Stack>
