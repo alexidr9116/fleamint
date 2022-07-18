@@ -19,6 +19,8 @@ export const MenuRoutes = [
             {title:'Leader Board',path:'/market-place/leader-board'},
             {title:'NFT Marketplace',path:'/market-place/nft'},
             {title:'NFT Create',path:'/market-place/create-nft'},
+            {title:'Product Detail',path:'/market-place/product-detail'},
+
         ]
     },
     {
