@@ -127,3 +127,39 @@ export const TableStyle = styled('table')(({ theme, sx }) => ({
     },
     ...sx
 }));
+export const NormalTableStyle = styled('table')(({ theme, sx }) => ({
+    width: '100%',
+    borderBottomLeftRadius:10,
+    borderBottomRightRadius:10,
+    background:'#ffffff90',
+    "& thead tr th": {
+        borderTop: `none`,
+        border: `1px solid #ccc`,
+        borderLeft:0,
+        fontWeight: 600,
+        fontSize: 14,
+        verticalAlign: 'bottom',
+        padding: '0.75rem',
+        cursor:'pointer',
+
+    },
+    "& tbody tr td": {
+        paddingTop: 6,
+        paddingBottom: 6,
+        paddingLeft: 10,
+        borderBottom: `1px solid #ccc`,
+        verticalAlign: `middle`,
+        fontSize: 13,
+        borderRight: `1px solid #ccc`,
+
+    },
+    "& tbody tr td:first-child,& thead tr th:first-child": {
+        borderLeft: `1px solid #ccc`,
+    },
+    "& tbody tr td img": {
+        height:40,
+        borderRadius:10,
+        verticalAlign: `middle`,
+    },
+    ...sx
+}));

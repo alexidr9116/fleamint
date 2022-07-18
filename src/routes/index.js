@@ -28,6 +28,7 @@ export default function Router() {
         { element: <ProfilePage />, index: true },
         { element: <Navigate to="/account" replace />, path: 'profile' },
         { element: <EditProfilePage />, path: 'edit' },
+        { element: <AnalysticPage />, path: 'analystic' },
       ],
     },
     {
@@ -82,6 +83,7 @@ const NFTCollectionPage = Loadable(lazy(() => import('../pages/NFTCollection')))
 // ACOUNT ROUTES
 const ProfilePage = Loadable(lazy(() => import('../pages/account/Profile')));
 const EditProfilePage = Loadable(lazy(() => import('../pages/account/EditProfile')));
+const AnalysticPage = Loadable(lazy(() => import('../pages/account/Analystic')));
 
 const Page500 = Loadable(lazy(() => import('../pages/Page500')));
 const Page403 = Loadable(lazy(() => import('../pages/Page403')));

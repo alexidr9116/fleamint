@@ -103,3 +103,18 @@ export const PopularCreatorsData = [
     }
 ]
 // end creators
+
+export const PerfomanceData = [
+    {
+        sort:'Today',
+        searcher:{direction:'down',amount:2546},user:{direction:'up',amount:12},session:{direction:'up',amount:12},avg:{direction:'up',amount:12},news:{direction:'down',amount:12},goal:{direction:'up',amount:12},paper:{direction:'up',amount:12},view:{direction:'up',amount:12}
+    },
+    {
+        sort:'This Week',
+        searcher:{direction:'up',amount:2546},user:{direction:'up',amount:12},session:{direction:'up',amount:12},avg:{direction:'down',amount:12},news:{direction:'up',amount:12},goal:{direction:'up',amount:12},paper:{direction:'up',amount:12},view:{direction:'up',amount:12}
+    },
+    {
+        sort:'This Month',
+        searcher:{direction:'down',amount:2546},user:{direction:'up',amount:12},session:{direction:'up',amount:12},avg:{direction:'down',amount:12},news:{direction:'up',amount:12},goal:{direction:'up',amount:12},paper:{direction:'down',amount:12},view:{direction:'up',amount:12}
+    },
+]
