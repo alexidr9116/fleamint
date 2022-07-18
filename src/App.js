@@ -11,6 +11,7 @@ import NotistackProvider from './components/NotistackProvider';
 // ----------------------------------------------------------------------
 
 export default function App() {
+  
   return (
 
     <ThemeProvider>
