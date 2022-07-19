@@ -114,12 +114,16 @@ export const TableStyle = styled('table')(({ theme, sx }) => ({
         padding: '0.75rem',
 
     },
+    "& tbody tr:hover": {
+        color:theme.palette.primary.main,
+    },
     "& tbody tr td": {
         background: 'white',
         padding: 3,
         paddingLeft: 10,
         borderBottom: `1px solid #FBE7D3`,
         verticalAlign: `middle`,
+        cursor:'pointer',
     },
     "& tbody tr td img": {
         height:40,
