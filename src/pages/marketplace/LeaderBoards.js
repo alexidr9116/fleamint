@@ -14,7 +14,7 @@ export default function LeaderBoard() {
     const theme = useTheme();
     const navigate = useNavigate();
     const handleNavigateProfile=(profile)=>{
-        navigate('/account/profile',{replace:true});        
+        navigate(`/account/profile/${profile.rank}`,{replace:true});        
     }
     return (
         <Page title="">
