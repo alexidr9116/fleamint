@@ -1,5 +1,6 @@
 import { Box, Button, ButtonGroup, Container, Divider, Grid, Stack, Typography, useTheme } from "@mui/material";
 import { Icon } from "@iconify/react";
+import { useNavigate } from "react-router";
 
 import { SelectStyle, TableStyle } from "../../components/StyledComponents";
 import Page from "../../components/Page";
@@ -8,9 +9,13 @@ import { MostCollectionData, MostItemsListData, MostSearchesData, MostValuableCo
 import { fNumber } from "../../utils/formatNumber";
 
 
+
 export default function LeaderBoard() {
     const theme = useTheme();
-
+    const navigate = useNavigate();
+    const handleNavigateProfile=(profile)=>{
+        navigate('/account/profile',{replace:true});        
+    }
     return (
         <Page title="">
             <Box sx={{ display: 'flex', gap: { xs: 10, sm: 12, md: 14 }, flexDirection: 'column' }} >
@@ -48,7 +53,7 @@ export default function LeaderBoard() {
                                         </thead>
                                         <tbody>
                                             {ProfilesData.map((profile,index)=>(
-                                                <tr key = {index}>
+                                                <tr key = {index} onClick = {()=>handleNavigateProfile(profile)}>
                                                     <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C'>(you)</Typography>||''}</td>
                                                     <td>{profile.user}</td>
                                                     <td><img  src = {profile.avatar} alt = '' /></td>
@@ -74,7 +79,7 @@ export default function LeaderBoard() {
                                         </thead>
                                         <tbody>
                                             {MostSearchesData.map((profile,index)=>(
-                                                <tr key = {index}>
+                                                <tr key = {index} onClick = {()=>handleNavigateProfile(profile)}>
                                                     <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C'>(you)</Typography>||''}</td>
                                                     <td>{profile.user}</td>
                                                     <td><img  src = {profile.avatar} alt = '' /></td>
@@ -100,7 +105,7 @@ export default function LeaderBoard() {
                                         </thead>
                                         <tbody>
                                             {MostItemsListData.map((profile,index)=>(
-                                                <tr key = {index}>
+                                                <tr key = {index} onClick = {()=>handleNavigateProfile(profile)}>
                                                     <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C'>(you)</Typography>||''}</td>
                                                     <td>{profile.user}</td>
                                                     <td><img  src = {profile.avatar} alt = '' /></td>
@@ -126,7 +131,7 @@ export default function LeaderBoard() {
                                         </thead>
                                         <tbody>
                                             {MostCollectionData.map((profile,index)=>(
-                                                <tr key = {index}>
+                                                <tr key = {index} onClick = {()=>handleNavigateProfile(profile)}>
                                                     <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C'>(you)</Typography>||''}</td>
                                                     <td>{profile.user}</td>
                                                     <td><img  src = {profile.avatar} alt = '' /></td>
@@ -152,7 +157,7 @@ export default function LeaderBoard() {
                                         </thead>
                                         <tbody>
                                             {MostItemsListData.map((profile,index)=>(
-                                                <tr key = {index}>
+                                                <tr key = {index} onClick = {()=>handleNavigateProfile(profile)}>
                                                     <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C'>(you)</Typography>||''}</td>
                                                     <td>{profile.user}</td>
                                                     <td><img  src = {profile.avatar} alt = '' /></td>
@@ -178,7 +183,7 @@ export default function LeaderBoard() {
                                         </thead>
                                         <tbody>
                                             {MostValuableCollectData.map((profile,index)=>(
-                                                <tr key = {index}>
+                                                <tr key = {index} onClick = {()=>handleNavigateProfile(profile)}>
                                                     <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C'>(you)</Typography>||''}</td>
                                                     <td>{profile.user}</td>
                                                     <td><img  src = {profile.avatar} alt = '' /></td>
