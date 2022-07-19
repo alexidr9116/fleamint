@@ -35,7 +35,7 @@ export default function AvgSessionChart() {
 
     return (
         <Box sx = {{mb:4}}>
-            <Card sx={{ width: '100%', background:"#ffffff80" }}>
+            <Card sx={{ width: '100%', background: "#ffffff" }}>
                 <CardContent >
                     <ApexCharts options={options} series={ApexChartData.series} type="line" height={350} />
                 </CardContent>

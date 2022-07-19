@@ -51,7 +51,7 @@ const CHAT_DATA = {
 export default function Top5CountriesChart() {
     return (
         <Box>
-             <Card sx={{ width: '100%', background:"#ffffff80" }}>
+             <Card sx={{ width: '100%', background: "#ffffff" }}>
                 <CardContent >
                     <ApexCharts options={CHAT_DATA.options} series={CHAT_DATA.series} type="bar" height={445} />
                 </CardContent>

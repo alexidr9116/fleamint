@@ -124,7 +124,7 @@ export default function HelpCenter() {
                                         aria-controls="panel1bh-content"
                                         id="panel1bh-header"
                                     >
-                                        <Typography variant="h6" color={(accordion.pannel === expanded) ? theme.palette.primary.dark : 'black'} >
+                                        <Typography variant="h6" color={(accordion.pannel === expanded) ? theme.palette.primary.dark : theme.palette.text.primary} >
                                             {accordion.title}
                                         </Typography>
 

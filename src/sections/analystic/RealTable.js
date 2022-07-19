@@ -12,7 +12,7 @@ export default function RealTable() {
     return (
         <Stack gap={2} sx ={{mb:4}} >
             <Typography variant="h4">Analytics Performance</Typography>
-            <Card sx={{ width: '100%',background:"#ffffff80" }}>
+            <Card sx={{ width: '100%',}}>
                 <CardContent >
                     <NormalTableStyle cellPadding={0} cellSpacing={0}>
                         <thead>

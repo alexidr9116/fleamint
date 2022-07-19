@@ -15,9 +15,9 @@ export default function WorldMapSVG() {
         <Box>
             <Card sx={{ width: '100%', background: "#ffffff" }}>
                 <Stack direction = "row" justifyContent={'space-between'} alignItems = {'end'} padding={2}>
-                    <Typography variant = "h5">Goal Completions By Countries </Typography>
+                    <Typography variant = "h5" color = "black">Goal Completions By Countries </Typography>
 
-                    <Typography variant = "h6">Last 30 Days</Typography>
+                    <Typography variant = "h6"  color = "black">Last 30 Days</Typography>
                     
                 </Stack>
                 <Divider />
