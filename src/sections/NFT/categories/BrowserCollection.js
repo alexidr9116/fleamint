@@ -10,8 +10,11 @@ import NFTCard from "../../../components/cards/NFTCard";
 export default function BrowserCollection() {
     const theme = useTheme();
     const [selectedIndex, setSelectedIndex] = useState(0);
-    const handleCategory = (index) => {
+    const [filtered,setFiltered] = useState(CollectionsData);
+    const handleCategory = (index,collection) => {
         setSelectedIndex(index);
+        const _filterd = CollectionsData.slice(0,CollectionsData.length);
+        setFiltered(_filterd.filter((f)=>f.category === collection.id));
     }
     return (
         <Container>
@@ -21,14 +24,14 @@ export default function BrowserCollection() {
                 <Typography color="gray">Discoverthe most outstanding NFTs in all topics of life</Typography>
                 <Stack direction="row" gap={2} justifyContent="space-between" flexWrap={'wrap'}>
                     {CollectionsCategories.map((collection, index) => (
-                        <BlankLink selected={index === selectedIndex} key={index} onClick={() => handleCategory(index)}>{collection.title}</BlankLink>
+                        <BlankLink selected={index === selectedIndex} key={index} onClick={() => handleCategory(index,collection)}>{collection.title}</BlankLink>
                     ))}
                 </Stack>
             </Stack>
             {/* end categories */}
             {/* Show Collections */}
             <Grid container mb={4}>
-                {CollectionsData.map((collection, index) => (
+                {filtered.map((collection, index) => (
                     <NFTCard collection = {collection} key = {index} theme = {theme}/>
                 ))}
             </Grid>

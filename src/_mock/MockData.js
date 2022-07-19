@@ -8,17 +8,17 @@ export const NotableDropsData = [
 ]
 // Collections
 export const CollectionsData = [
-    {image:'/assets/images/card1.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'/assets/images/card2.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'/assets/images/card3.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'/assets/images/card4.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'/assets/images/card1.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'/assets/images/card2.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'/assets/images/card3.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'/assets/images/card4.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},{image:'/assets/images/card1.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'/assets/images/card2.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'/assets/images/card3.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
-    {image:'/assets/images/card4.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {category:1,image:'/assets/images/card1.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {category:1,image:'/assets/images/card2.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {category:1,image:'/assets/images/card3.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {category:3,image:'/assets/images/card4.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {category:1,image:'/assets/images/card1.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {category:1,image:'/assets/images/card2.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {category:1,image:'/assets/images/card3.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {category:2,image:'/assets/images/card4.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},{image:'/assets/images/card1.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {category:4,image:'/assets/images/card2.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {category:2,image:'/assets/images/card3.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
+    {category:4,image:'/assets/images/card4.png',name:'Clone#1030',stock:56, bid:'1.000 FLM', time:'15 Hours Left'},
 ];
 export const CollectionsCategories = [
     {id:1, title:'Trending'},
