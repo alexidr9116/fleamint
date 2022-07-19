@@ -32,12 +32,11 @@ import { HelmetProvider } from 'react-helmet-async';
 
 import './index.css';
 // @mui
-import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
-import { LocalizationProvider } from '@mui/x-date-pickers';
+
 // redux
 
 // contexts
-
+import { SettingsProvider } from './contexts/SettingsContext';
 
 //
 import App from './App';
@@ -50,9 +49,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <HelmetProvider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <SettingsProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </SettingsProvider>
   </HelmetProvider>
 
 );

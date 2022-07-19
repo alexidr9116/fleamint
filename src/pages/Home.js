@@ -24,12 +24,14 @@ export const CardStyle = styled('div')(({ sx }) => ({
   justifyContent: 'center',
   ...sx,
 }));
-export const GradientStyle = styled('div')(({ sx }) => ({
+export const GradientStyle = styled('div')(({ theme, sx }) => ({
+
   ...sx,
   height: '100%',
-  background: `linear-gradient(rgba(242, 156, 67, 0.26) 0%, rgba(229, 239, 255, 0.263) 83.7%, rgba(229, 239, 255, 0) 100%)`,
+  background: theme.palette.mode === 'light' ? `linear-gradient(rgba(242, 156, 67, 0.26) 0%, rgba(229, 239, 255, 0.263) 83.7%, rgba(229, 239, 255, 0) 100%)` : 'linear-gradient(rgba(0,0,0, 0.26) 0%, rgba(229, 239, 255, 0.263) 83.7%, rgba(229, 239, 255, 0) 100%)',
 
 }));
+
 export default function HomePage() {
   const [openWallet, setOpenWallet] = useState(false);
   const handleConnectWallet = () => {

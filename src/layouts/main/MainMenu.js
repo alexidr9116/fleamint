@@ -2,11 +2,13 @@ import { Button, IconButton, Stack } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
-import { MenuRoutes } from "../../_mock/MenuItems"; 
-import useResponsive from "../../hooks/useResponsive"; 
+import { MenuRoutes } from "../../_mock/MenuItems";
+import useResponsive from "../../hooks/useResponsive";
 import DropdownMenu from "../../components/DropdownMenu";
 import MobileDrawer from "./MobileDrawer";
 import ConnectWallet from "../../pages/ConnectWallet";
+import IconfyButton from "../../components/IconfyButton";
+import useSettings from "../../hooks/useSettings";
 
 const MenuAction = styled('div')(({ theme }) => ({
 
@@ -17,9 +19,12 @@ const MenuAction = styled('div')(({ theme }) => ({
 }))
 
 export default function MainMenu() {
+    const { themeMode, onToggleMode } = useSettings();
+
     const isMobile = useResponsive('down', 'md');
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
     const [openWallet, setOpenWallet] = useState(false);
+
     const handleCloseWallet = () => {
         setOpenWallet(false);
     }
@@ -38,6 +43,11 @@ export default function MainMenu() {
             <Button variant="contained" sx={{ paddingX: 4 }} onClick={() => {
                 setOpenWallet(true);
             }}>Wallet</Button>
+            <IconButton onClick = {onToggleMode} sx = {{color:'black'}}>
+                <Icon  color = {themeMode === 'light' ?'black':'white'} icon={themeMode === 'light' ? "ic:twotone-nightlight" : "carbon:light-filled"} handleEvent={onToggleMode} width={20} />
+            </IconButton>
+
+
             {isMobile &&
                 <>
                     <IconButton onClick={openDrawer}>

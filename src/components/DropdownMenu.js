@@ -7,7 +7,7 @@ import RouterLink from "./RouterLink";
 
 
 const MenuAction = styled('div')(({ theme }) => ({
-
+    color:(theme.palette.mode==='dark'?'white':'black'),
     cursor: 'pointer',
     display: 'flex',
     alignItems: 'center',
@@ -33,7 +33,7 @@ export default function DropdownMenu({ menu }) {
                     <RouterLink to={menu.path}>{menu.title}</RouterLink>
                 }
                 {menu.elements &&
-                    <div>{menu.title}<Iconify icon={"bx:chevron-down"} /></div>
+                    <div >{menu.title}<Iconify icon={"bx:chevron-down"} /></div>
 
                 }
             </MenuAction>

@@ -9,6 +9,7 @@ import palette from './palette';
 import typography from './typography';
 import breakpoints from './breakpoints';
 import shadows, { customShadows } from './shadows';
+import useSettings from '../hooks/useSettings';
 
 // ----------------------------------------------------------------------
 
@@ -17,18 +18,18 @@ ThemeProvider.propTypes = {
 };
 
 export default function ThemeProvider({ children }) {
-
-
+  const { themeMode } = useSettings();
+  const isLight = themeMode === 'light';
   const themeOptions = useMemo(
     () => ({
-      palette: palette.light,
+      palette: isLight ? palette.light : palette.dark,
       typography,
       breakpoints,
       shape: { borderRadius: 8 },
-      shadows: shadows.light,
+      shadows: isLight ? shadows.light : shadows.dark,
       customShadows: customShadows.light,
     }),
-    []
+    [isLight]
   );
 
   const theme = createTheme(themeOptions);
