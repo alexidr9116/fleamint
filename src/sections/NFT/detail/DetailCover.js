@@ -65,9 +65,7 @@ export default function DetailCover() {
                     <Divider variant="middle" flexItem />
                     <Stack direction='row' mb={4} gap={1} justifyContent='space-between' alignItems={'end'}>
                         <TextField
-                            InputProps={{
-                                readOnly: true,
-                            }}
+                           
                             label='Current Bid' defaultValue={"1,000 FLM"} sx={{
                                 "& .MuiOutlinedInput-root": {
                                     "& > fieldset": { borderColor: theme.palette.primary.dark },
