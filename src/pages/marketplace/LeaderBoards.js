@@ -54,7 +54,7 @@ export default function LeaderBoard() {
                                         <tbody>
                                             {ProfilesData.map((profile,index)=>(
                                                 <tr key = {index} onClick = {()=>handleNavigateProfile(profile)}>
-                                                    <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C'>(you)</Typography>||''}</td>
+                                                    <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C' variant='caption'>(you)</Typography>||''}</td>
                                                     <td>{profile.user}</td>
                                                     <td><img  src = {profile.avatar} alt = '' /></td>
                                                     <td><Typography display={'flex'} alignItems="center"><Icon icon = "ei:trophy" color={profile.color} width={20}/>{fNumber(profile.value)}</Typography></td>
@@ -80,7 +80,7 @@ export default function LeaderBoard() {
                                         <tbody>
                                             {MostSearchesData.map((profile,index)=>(
                                                 <tr key = {index} onClick = {()=>handleNavigateProfile(profile)}>
-                                                    <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C'>(you)</Typography>||''}</td>
+                                                    <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C' variant='caption'>(you)</Typography>||''}</td>
                                                     <td>{profile.user}</td>
                                                     <td><img  src = {profile.avatar} alt = '' /></td>
                                                     <td><Typography display={'flex'} alignItems="center"><Icon icon = "ei:trophy" color={profile.color} width={20}/>{fNumber(profile.value)}</Typography></td>
@@ -106,7 +106,7 @@ export default function LeaderBoard() {
                                         <tbody>
                                             {MostItemsListData.map((profile,index)=>(
                                                 <tr key = {index} onClick = {()=>handleNavigateProfile(profile)}>
-                                                    <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C'>(you)</Typography>||''}</td>
+                                                    <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C' variant='caption'>(you)</Typography>||''}</td>
                                                     <td>{profile.user}</td>
                                                     <td><img  src = {profile.avatar} alt = '' /></td>
                                                     <td><Typography display={'flex'} alignItems="center"><Icon icon = "ei:trophy" color={profile.color} width={20}/>{fNumber(profile.value)}</Typography></td>
@@ -132,7 +132,7 @@ export default function LeaderBoard() {
                                         <tbody>
                                             {MostCollectionData.map((profile,index)=>(
                                                 <tr key = {index} onClick = {()=>handleNavigateProfile(profile)}>
-                                                    <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C'>(you)</Typography>||''}</td>
+                                                    <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C' variant='caption'>(you)</Typography>||''}</td>
                                                     <td>{profile.user}</td>
                                                     <td><img  src = {profile.avatar} alt = '' /></td>
                                                     <td><Typography display={'flex'} alignItems="center"><Icon icon = "ei:trophy" color={profile.color} width={20}/>{fNumber(profile.value)}</Typography></td>
@@ -158,7 +158,7 @@ export default function LeaderBoard() {
                                         <tbody>
                                             {MostItemsListData.map((profile,index)=>(
                                                 <tr key = {index} onClick = {()=>handleNavigateProfile(profile)}>
-                                                    <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C'>(you)</Typography>||''}</td>
+                                                    <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C' variant='caption'>(you)</Typography>||''}</td>
                                                     <td>{profile.user}</td>
                                                     <td><img  src = {profile.avatar} alt = '' /></td>
                                                     <td><Typography display={'flex'} alignItems="center"><Icon icon = "ei:trophy" color={profile.color} width={20}/>{fNumber(profile.value)}</Typography></td>
@@ -184,7 +184,7 @@ export default function LeaderBoard() {
                                         <tbody>
                                             {MostValuableCollectData.map((profile,index)=>(
                                                 <tr key = {index} onClick = {()=>handleNavigateProfile(profile)}>
-                                                    <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C'>(you)</Typography>||''}</td>
+                                                    <td>{profile.rank}{profile?.isYou&&<Typography color = '#00D18C' variant='caption'>(you)</Typography>||''}</td>
                                                     <td>{profile.user}</td>
                                                     <td><img  src = {profile.avatar} alt = '' /></td>
                                                     <td><Typography display={'flex'} alignItems="center"><Icon icon = "ei:trophy" color={profile.color} width={20}/>{fNumber(profile.value)}</Typography></td>
