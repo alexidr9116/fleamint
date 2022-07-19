@@ -14,7 +14,7 @@ export default function HomeAvax({ connectWallet }) {
             {/* Become a creator */}
             <Grid container padding={{ xs: 2, sm: 4, md: 8 }}>
                 <Grid item md={6} sm={12} paddingX={{ sm: 10, md: 12, lg: 20 }} sx={{ mb: 4 }}>
-                    <Image src='/assets/images/image 150.png' alt='' width={'100%'} />
+                    <Image src='/assets/images/Group 2656.png' alt='' width={'100%'} />
                 </Grid>
                 <Grid item md={6} sm={12}>
                     <Stack gap={4}>
