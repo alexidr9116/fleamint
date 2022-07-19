@@ -25,8 +25,7 @@ export default function Router() {
       path: '/account',
       element: <MainLayout />,
       children: [
-        { element: <ProfilePage />, index: true },
-        { element: <Navigate to="/account" replace />, path: 'profile/:id' },
+        { element: <ProfilePage/>, path: 'profile/:id' },
         { element: <EditProfilePage />, path: 'edit' },
         { element: <AnalysticPage />, path: 'analystic' },
         { element: <HelpCenterPage />, path: 'help' },
