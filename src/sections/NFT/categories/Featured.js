@@ -40,7 +40,7 @@ function FeaturedNFTsCarousel() {
                         <Box sx={{ position: { sm: 'absolute' }, left: { sm: '40%', lg: '42%' }, top: 0, height: '100%', display: 'flex', flexDirection: 'column' }} justifyContent={'center'}>
                             <Stack justifyContent='center' sx = {{padding:{xs:4}}}>
                                 <Box>
-                                    <CardStyle sx={{ padding: '16px 24px 16px 24px', background: 'white', flexDirection: 'column', gap: 2 }}>
+                                    <CardStyle sx={{ padding: '16px 24px 16px 24px',  flexDirection: 'column', gap: 2 }}>
                                         <Typography variant="h6" sx={{ textAlign: 'center' }}>{author.title}</Typography>
                                         {/* Avatar */}
                                         <Stack direction='row' gap={2}>
@@ -105,7 +105,7 @@ export default function FeaturedNFTs() {
     return (
         <GradientStyle sx={{ paddingTop: 18, display: 'flex', gap: 8, flexDirection: 'column' }} >
             <Container>
-                <CardStyle sx={{ padding: { xs: 2, md: 4 }, background:'white' }} >
+                <CardStyle sx={{ padding: { xs: 2, md: 4 },  }} >
                     <Grid container>
                         <Grid item xs={12} md={4} sx = {{textAlign:'center'}} >
                             <Typography variant="h4" sx = {{paddingY:{xs:2,sm:4, md:10}}}>

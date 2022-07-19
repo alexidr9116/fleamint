@@ -60,8 +60,8 @@ const GREY = {
   500: '#919EAB',
   600: '#637381',
   700: '#454F5B',
-  800: '#212B36',
-  900: '#001e3c',
+  800: '#001e30',
+  900: '#001c2c',
   500_8: alpha('#919EAB', 0.08),
   500_12: alpha('#919EAB', 0.12),
   500_16: alpha('#919EAB', 0.16),
@@ -89,7 +89,7 @@ const CHART_COLORS = {
 };
 
 const COMMON = {
-  common: { black: '#000', white: '#fff' },
+  common: { black: '#191919', white: '#fff' },
   primary: { ...PRIMARY, contrastText: '#fff' },
   secondary: { ...SECONDARY, contrastText: '#fff' },
   info: { ...INFO, contrastText: '#fff' },

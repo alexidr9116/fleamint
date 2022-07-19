@@ -12,7 +12,7 @@ export const BlankLink = styled('a')(({ theme, selected }) => (
     {
         textDecoration: selected ? 'underline' : 'none',
         cursor: "pointer",
-        color: selected ? theme.palette.primary.main : 'black',
+        color: selected ? theme.palette.primary.main : theme.palette.text.primary,
     }
 ));
 

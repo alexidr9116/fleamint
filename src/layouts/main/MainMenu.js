@@ -44,7 +44,7 @@ export default function MainMenu() {
                 setOpenWallet(true);
             }}>Wallet</Button>
             <IconButton onClick = {onToggleMode} sx = {{color:'black'}}>
-                <Icon  color = {themeMode === 'light' ?'black':'white'} icon={themeMode === 'light' ? "ic:twotone-nightlight" : "carbon:light-filled"} handleEvent={onToggleMode} width={20} />
+                <Icon  color = {themeMode === 'light' ?'black':'white'} icon={themeMode === 'light' ? "ic:twotone-nightlight" : "carbon:light-filled"} width={20} />
             </IconButton>
 
 

@@ -16,7 +16,7 @@ export default function CollectionCover() {
 
         <BackgroundImageStyle sx={{ backgroundImage: 'url(/assets/images/collectionbg.png)', paddingX: { xs: 2, sm: 4, md: 8, lg: 20 }, paddingTop: 20, justifyContent: 'center', flexDirection: 'column' }}>
             {/* Awesome NFT Collections */}
-            <CardStyle sx={{ flexDirection: 'column', width: '100%', background: 'white', padding: 2, paddingX: 4, }}>
+            <CardStyle sx={{ flexDirection: 'column', width: '100%',  padding: 2, paddingX: 4, }}>
 
                 <Stack direction="row" gap={2}>
                     <Grid container>

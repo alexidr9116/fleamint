@@ -12,7 +12,7 @@ export default function CreateNFT() {
         <Page title="Create NFT">
             <GradientStyle sx={{ paddingTop: 15, paddingBottom: 4, display: 'flex', gap: 8, flexDirection: 'column' }} >
                 <Container>
-                    <CardStyle sx={{ padding: { xs: 2, sm: 4, md: 10, lg: 12 }, background: '#ffffff5a', flexDirection: 'column' }} >
+                    <CardStyle sx={{ padding: { xs: 2, sm: 4, md: 10, lg: 12 }, flexDirection: 'column' }} >
                         <Stack gap={2} sx={{ mb: 4, textAlign: 'center' }} >
                             <Typography variant="h3" sx={{ mb: 2 }}>Create New Item</Typography>
                             <Typography variant="h4">Image, Video, Audio, or 3D Model</Typography>

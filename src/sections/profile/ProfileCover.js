@@ -16,7 +16,7 @@ export default function ProfileCover({ isYou }) {
 
         <BackgroundImageStyle sx={{ backgroundImage: 'url(/assets/images/profilebg.png)', paddingX: { xs: 2, sm: 4, md: 8, lg: 20 }, paddingTop: 20, justifyContent: 'center', flexDirection: 'column' }}>
             {/* Account Infomation Card */}
-            <CardStyle sx={{ flexDirection: 'column', width: '100%', background: 'white', padding: 2, paddingX: 4, }}>
+            <CardStyle sx={{ flexDirection: 'column', width: '100%', padding: 2, paddingX: 4, }}>
                 {isYou &&
                     < Stack justifyContent={'end'} sx={{ mb: 2 }}>
                         <FormControlLabel control={<Switch color="error" />} label="Private Your Profile?" labelPlacement="start" />
@@ -56,18 +56,18 @@ export default function ProfileCover({ isYou }) {
                             <Typography color="gray" paddingY={{ xs: 2, lg: 1 }}>{AccountProfileData.description}</Typography>
                             {/* Followers */}
                             <Stack direction={{ md: 'row', sm: 'column', xs: 'column' }} justifyContent="space-between" ml={{ lg: 0, md: -10, sm: 0 }}>
-                                <Stack justifyContent={'space-between'} direction="row" padding={2} sx={{ borderRadius: 1, background: '#f5585b1a' }} gap={3}>
-                                    <Typography component={'p'} variant="h4">
+                                <Stack justifyContent={'space-between'} direction="row" padding={2} sx={{ borderRadius: 1, background: '#f5585b1a' }} gap={3} alignItems="center" textAlign={'center'} >
+                                    <Typography  variant="h5" >
                                         {AccountProfileData.following}<br />
-                                        <small style={{ color: 'gray', fontWeight: 400, fontSize: 16 }}>Following</small>
+                                        <font style={{ color: 'gray', fontWeight: 400, fontSize: 16 }}>Following</font>
                                     </Typography>
-                                    <Typography component={'p'} variant="h4">
+                                    <Typography   variant="h5">
                                         {AccountProfileData.followers}<br />
-                                        <small style={{ color: 'gray', fontWeight: 400, fontSize: 16 }}>Followers</small>
+                                        <font style={{ color: 'gray', fontWeight: 400, fontSize: 16 }}>Followers</font>
                                     </Typography>
-                                    <Typography component={'p'} variant="h4">
+                                    <Typography  variant="h5">
                                         {AccountProfileData.like}<br />
-                                        <small style={{ color: 'gray', fontWeight: 400, fontSize: 16 }}>Like</small>
+                                        <font style={{ color: 'gray', fontWeight: 400, fontSize: 16 }}>Like</font>
                                     </Typography>
                                 </Stack>
                                 <Stack direction="row" sx={{ paddingY: 4 }} gap={1}>

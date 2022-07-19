@@ -62,7 +62,7 @@ export default function NFTMarketplace() {
                 </Container>
 
                 {/* Corporate */}
-                <Box padding={2} sx={{ backgroundImage: 'url(/assets/images/nft-market-bg-1.png),url(/assets/images/nft-market-bg-2.png)', backgroundPosition: 'top,bottom', backgroundRepeat: 'no-repeat, no-repeat', backgroundSize: 'cover' }} >
+                <Box padding={2} sx={{ backgroundImage: (theme.palette.mode==='light'?"url(/assets/images/nft-market-bg-1.png),url(/assets/images/nft-market-bg-2.png)":""), backgroundPosition: 'top,bottom', backgroundRepeat: 'no-repeat, no-repeat', backgroundSize: 'cover' }} >
                     <Container>
                         <Stack gap={1} alignItems={'center'} sx = {{padding:2}}>
                             <Typography component={'div'} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'end', gap: 1, mb: 4 }}>

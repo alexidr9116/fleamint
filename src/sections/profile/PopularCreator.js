@@ -12,7 +12,7 @@ export default function PopularCreator() {
             <Grid container sx = {{background:'rgba(245, 88, 91, 0.1)',padding:1, borderRadius:1}}>
                 {PopularCreatorsData.map((creator, index) => (
                     <Grid item xs={12} sm={6} md={6} lg={4} key={index} sx={{ padding: 1,  }} >
-                        <Stack alignItems={'center'} sx={{ borderRadius: 2,background:'white', position: 'relative', boxShadow: '0px 12px 26px rgb(16 30 115 / 6%)' }}>
+                        <Stack alignItems={'center'} sx={{ borderRadius: 2,background:theme.palette.background.paper, position: 'relative', boxShadow: '0px 12px 26px rgb(16 30 115 / 6%)' }}>
                             <Chip label={creator.style}  sx = {{zIndex:10, position:'absolute', top:10, left:10, background:theme.palette.primary.dark, color:'white'}} />
 
                             <Box sx={{ width: '100%' }}>

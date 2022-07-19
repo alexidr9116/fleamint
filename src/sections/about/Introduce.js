@@ -6,12 +6,11 @@ import IconfyButton from '../../components/IconfyButton';
 import { GradientStyle } from '../../pages/Home';
 
 const AboutCardStyle = styled('div')(({ theme, sx }) => ({
-    background: 'rgba(255,255,255,0.5)',
+    background: (theme.palette.mode ==="light"?'rgba(255,255,255,0.5)':theme.palette.background.default),
     boxShadow: '0px 3px 26px rgb(16 30 115 / 10%)',
-    border: '1px solid rgb(239,239,239)',
+    border: `1px solid ${theme.palette.background.paper}`,
     borderImage: 'initial',
     borderRadius: '10px',
-
     width: '100%',
     height: '100%',
     display: 'flex',

@@ -24,9 +24,9 @@ export default function LeaderBoard() {
                         <Stack direction={{ xs: 'column', sm: 'column', md: 'row'}} gap={2} justifyContent='space-between' alignItems="center">
 
                             <Typography variant="h3">Leader Boards</Typography>
-                            <Stack direction='row' gap={2} sx={{ background: '#ffffff99', boxShadow: '0 3px 26px #101e731a'  }} padding={1} borderRadius={1} >
+                            <Stack direction='row' gap={2} sx={{ background: theme.palette.background.paper, boxShadow: '0 3px 26px #101e731a'  }} padding={1} borderRadius={1} >
                                 <SelectStyle>
-                                    <option>View</option>
+                                    <option>Select Mode</option>
                                 </SelectStyle>
                                 <Divider orientation="vertical" variant="middle" flexItem/>
                                 <ButtonGroup variant="outlined" aria-label="outlined button group">

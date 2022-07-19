@@ -19,7 +19,7 @@ CoporateCard.propTypes = {
 const CardStyle = styled(`div`)(({ theme }) => ({
     boxShadow: 'rgba(16, 30, 115, 0.06) 0px 12px 26px',
     background: theme.palette.background.default,
-    border: '1px solid rgb(239,239,239)',
+    border: `1px solid ${theme.palette.background.paper}`,
     borderImage: 'initial',
     borderRadius: '10px',
     '&:hover': { boxShadow: 'rgba(16, 30, 115, 0.26) 0px 12px 26px' },
