@@ -57,8 +57,8 @@ const WALLET_LIST = [
     { name: 'Metamask', image: '/assets/images/metamask-alternative 1.png', popular: false },
     { name: 'Coinbase Wallet', image: '/assets/images/metamask-alternative 2.png', popular: false },
     { name: 'Wallet Connect', image: '/assets/images/metamask-alternative 3.png', popular: false },
-    { name: 'Phantom', image: '/assets/images/Vector (3).png', popular: false },
-    { name: 'Glow', image: '/assets/images/Vector (4).png', popular: false },
+    { name: 'Phantom', image: '/assets/images/phantom 1.png', popular: false },
+    { name: 'Glow', image: '/assets/images/glow 1.png', popular: false },
 ]
 export default function ConnectWallet({ open, handleClose }) {
 
