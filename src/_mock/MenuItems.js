@@ -31,7 +31,7 @@ export const MenuRoutes = [
         title:'Account',
         path:'/account',
         elements:[
-            {title:'Profile',path:'/account/profile/:51'},
+            {title:'Profile',path:'/account/profile/51'},
             {title:'Edit Profile',path:'/account/edit'},
             {title:'Brand Profile',path:'/account/brand'},
             {title:'Analystics',path:'/account/analystic'},
