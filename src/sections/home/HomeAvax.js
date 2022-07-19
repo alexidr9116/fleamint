@@ -7,13 +7,13 @@ import RouterLink from "../../components/RouterLink";
 
 
 
-export default function HomeAvax({connectWallet}) {
+export default function HomeAvax({ connectWallet }) {
     const theme = useTheme();
     return (
         <Box gap={4}>
             {/* Become a creator */}
             <Grid container padding={{ xs: 2, sm: 4, md: 8 }}>
-                <Grid item md={6} sm={12} paddingX={{ sm: 10, lg: 14 }}>
+                <Grid item md={6} sm={12} paddingX={{ sm: 10, md: 12, lg: 20 }} sx={{ mb: 4 }}>
                     <Image src='/assets/images/image 150.png' alt='' width={'100%'} />
                 </Grid>
                 <Grid item md={6} sm={12}>
@@ -80,7 +80,7 @@ export default function HomeAvax({connectWallet}) {
                         <Typography>
                             We offer services to the charities that can change and save lives all over the world, every single day, for free. Giving back to the community and others in neeed is a core tenet of our philisophy and our community.
                         </Typography>
-                        <ul className = 'text-ul'>
+                        <ul className='text-ul'>
                             <li>
                                 Provide tools for you to personally measure in real time, no marketing bs. Try it, love it, buy it.
                             </li>

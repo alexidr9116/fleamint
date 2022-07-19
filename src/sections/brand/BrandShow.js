@@ -30,7 +30,6 @@ export default function BrandShow() {
                 </Stack>
                 <Grid container sx={{ padding: 2 }}>
                     <Grid item xs={12} sm={5} md={6} sx={{ display: 'flex', gap: 2, flexDirection: 'column' }} >
-                        <CustomButton size="90%">Real Estate - NFT</CustomButton>
                         <CustomButton size="90%">Jewelry</CustomButton>
                         <CustomButton size="90%">Wines</CustomButton>
                         <CustomButton size="90%">Motor Cars</CustomButton>
