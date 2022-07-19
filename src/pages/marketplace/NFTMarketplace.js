@@ -1,4 +1,6 @@
 import { Box, Button, ButtonGroup, Container, Divider, Grid, Stack, Typography, useTheme } from "@mui/material";
+import { useNavigate } from "react-router";
+
 import TextSpinBox from "../../components/TextSpinBox";
 
 import Page from "../../components/Page";
@@ -7,7 +9,12 @@ import { BrandData } from "../../_mock/BrandData";
 import CoporateCard from "../../components/cards/CorporateCard";
 import BrowserCollection from "../../sections/NFT/categories/BrowserCollection";
 
+
 export default function NFTMarketplace() {
+    const navigate = useNavigate();
+    const handleNavigateRank = ()=>{
+        navigate('/market-place/leader-board',{replace:true})
+    }
     const theme = useTheme();
     return (
         <Page title="Create Lead">
@@ -72,7 +79,7 @@ export default function NFTMarketplace() {
                                 </Grid>
                             ))}
                         </Grid>
-                        <Box justifyContent={'center'} display={'flex'} sx={{mb:4}}>
+                        <Box justifyContent={'center'} display={'flex'} sx={{mb:4}} onClick ={handleNavigateRank}>
                             <Button variant={'contained'}>GO TO RANKING</Button>
                         </Box>
                         

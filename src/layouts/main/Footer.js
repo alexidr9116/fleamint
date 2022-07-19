@@ -42,39 +42,39 @@ export default function MainFooter() {
                     <GradientStyle sx={{ mb: 3, width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', paddingTop: { xs: 2, sm: 10 }, paddingX: { xs: 2, sm: 10 } }}>
                         <Stack gap={2} sx={{ mb: 3, paddingX: 2 }} alignItems='start'>
                             <Typography variant={'h5'} sx={{ mb: 1 }}>Marketplace</Typography>
-                            <RouterLink to='/' color='gray'>All NFTs</RouterLink>
-                            <RouterLink to='/' color='gray'>Solana NFTs</RouterLink>
-                            <RouterLink to='/' color='gray'>Art</RouterLink>
-                            <RouterLink to='/' color='gray'>Collectibles</RouterLink>
-                            <RouterLink to='/' color='gray'>Domain Names</RouterLink>
-                            <RouterLink to='/' color='gray'>Music</RouterLink>
+                            <RouterLink to='/market-place/nft' color='gray'>All NFTs</RouterLink>
+                            <RouterLink to='/market-place/nft' color='gray'>Solana NFTs</RouterLink>
+                            <RouterLink to='/market-place/nft' color='gray'>Art</RouterLink>
+                            <RouterLink to='/market-place/nft' color='gray'>Collectibles</RouterLink>
+                            <RouterLink to='/market-place/nft' color='gray'>Domain Names</RouterLink>
+                            <RouterLink to='/market-place/nft' color='gray'>Music</RouterLink>
                         </Stack>
 
                         <Stack gap={2} sx={{ mb: 3, paddingX: 2 }} alignItems='start'>
                             <Typography variant={'h5'} sx={{ mb: 1 }}>My Account</Typography>
-                            <RouterLink to='/' color='gray'>Profile</RouterLink>
-                            <RouterLink to='/' color='gray'>Favorites</RouterLink>
-                            <RouterLink to='/' color='gray'>Watchlist</RouterLink>
-                            <RouterLink to='/' color='gray'>My Collections</RouterLink>
+                            <RouterLink to='/account/profile/151' color='gray'>Profile</RouterLink>
+                            <RouterLink to='/account/profile/151' color='gray'>Favorites</RouterLink>
+                            <RouterLink to='/account/profile/151' color='gray'>Watchlist</RouterLink>
+                            <RouterLink to='/account/profile/151' color='gray'>My Collections</RouterLink>
                         </Stack>
                         <Stack gap={2} sx={{ mb: 3, paddingX: 2 }} alignItems='start'>
                             <Typography variant={'h5'} sx={{ mb: 1 }}>Resources</Typography>
-                            <RouterLink to='/' color='gray'>Help Center</RouterLink>
-                            <RouterLink to='/' color='gray'>Platform Status</RouterLink>
+                            <RouterLink to='/account/help' color='gray'>Help Center</RouterLink>
+                            <RouterLink to='/account/analystic' color='gray'>Platform Status</RouterLink>
                             <RouterLink to='/' color='gray'>Partners</RouterLink>
-                            <RouterLink to='/' color='gray'>Gas-Free Marketplace</RouterLink>
-                            <RouterLink to='/' color='gray'>Blog</RouterLink>
+                            <RouterLink to='/market-place' color='gray'>Gas-Free Marketplace</RouterLink>
+                            <RouterLink to='/blogs' color='gray'>Blog</RouterLink>
 
                         </Stack>
                         <Stack gap={2} sx={{ mb: 3, paddingX: 2 }} alignItems='start'>
                             <Typography variant={'h5'} sx={{ mb: 1 }}>Stats</Typography>
-                            <RouterLink to='/' color='gray'>Rankings</RouterLink>
-                            <RouterLink to='/' color='gray'>Activity</RouterLink>
+                            <RouterLink to='/market-place/leader-board' color='gray'>Rankings</RouterLink>
+                            <RouterLink to='/market-place/leader-board' color='gray'>Activity</RouterLink>
                         </Stack>
                         <Stack gap={2} sx={{ mb: 3, paddingX: 2 }} alignItems='start'>
                             <Typography variant={'h5'} sx={{ mb: 1 }}>Company</Typography>
-                            <RouterLink to='/' color='gray'>About</RouterLink>
-                            <RouterLink to='/' color='gray'>Career</RouterLink>
+                            <RouterLink to='/about' color='gray'>About</RouterLink>
+                            <RouterLink to='/about' color='gray'>Career</RouterLink>
                         </Stack>
                     </GradientStyle>
 

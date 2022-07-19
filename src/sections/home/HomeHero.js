@@ -7,6 +7,7 @@ import { EffectCoverflow, Navigation, Zoom } from 'swiper';
 import Image from "../../components/Image";
 
 import { IconifyLink } from "../../components/StyledComponents";
+import RouterLink from "../../components/RouterLink";
 
 const SLIDER_SETTING = {
     effect: "coverflow",
@@ -47,8 +48,8 @@ export default function HomeHero() {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     </Typography>
                     <Stack direction="row" gap={2}>
-                        <Button variant="contained" sx={{ paddingX: 6 }} size="large">Explore</Button>
-                        <Button variant="outlined" sx={{ paddingX: 6 }} size="large">Create</Button>
+                        <Button  variant="contained" sx={{ paddingX: 6 }} size="large"><RouterLink color='white' to = '/market-place/nft'>Explore</RouterLink></Button>
+                        <Button variant="outlined" sx={{ paddingX: 6 }} size="large"><RouterLink color = {theme.palette.primary.main} to = '/market-place/create-nft'>Create</RouterLink></Button>
                     </Stack>
                 </Stack>
             </Grid>

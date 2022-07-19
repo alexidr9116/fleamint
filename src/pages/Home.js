@@ -28,6 +28,9 @@ export const GradientStyle = styled('div')(({ sx }) => ({
 
 }));
 export default function HomePage() {
+  const handleConnectWallet = ()=>{
+     
+  }
   return (
     <Page title="">
       <Box sx={{ display: 'flex', gap: { xs: 4, sm: 6, md: 8 }, flexDirection: 'column' }} >
@@ -35,7 +38,7 @@ export default function HomePage() {
           <HomeHero />
           <HomeNotableDrops />
         </GradientStyle>
-        <HomeAvax />
+        <HomeAvax connectWallet = {handleConnectWallet} />
         <HomeBrand />
       </Box>
     </Page>

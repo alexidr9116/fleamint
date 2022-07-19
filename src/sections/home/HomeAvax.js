@@ -3,10 +3,11 @@ import { styled, useTheme } from '@mui/material/styles';
 import { Box } from "@mui/system";
 import { RootStyle } from "../../components/StyledComponents";
 import Image from "../../components/Image";
+import RouterLink from "../../components/RouterLink";
 
 
 
-export default function HomeAvax() {
+export default function HomeAvax({connectWallet}) {
     const theme = useTheme();
     return (
         <Box gap={4}>
@@ -23,8 +24,10 @@ export default function HomeAvax() {
                         <Typography>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         </Typography>
-                        <Box>
-                            <Button variant="contained" sx={{ paddingX: 10, paddingY: 1 }}>Get Started</Button>
+                        <Box display="flex" justifyContent="center">
+                            <Button variant="contained" sx={{ paddingX: 10, paddingY: 1 }}>
+                                <RouterLink to='/market-place/create-nft' color="white">Get Started</RouterLink>
+                            </Button>
                         </Box>
                     </Stack>
                 </Grid>
@@ -36,7 +39,7 @@ export default function HomeAvax() {
                 <Typography>
                     Blisteringly fast, green blockchain with surprisingly low costs of usage. PoS means no wasteful mining with huge electricity generation costs. Theoretically infinite Transactions per second and a cross chain approach through the application of EVM technology makes Avax the natural choice for our company
                 </Typography>
-                <Button variant="outlined" size='large' sx={{ color: theme.palette.primary.dark, paddingX: 10, paddingY: 2, background: 'white', borderColor: 'white', '&:hover': { background: 'transparent', borderColor: 'white', color: 'white' } }}><Typography variant="h6">Connect Wallet</Typography></Button>
+                <Button onClick={connectWallet} variant="outlined" size='large' sx={{ color: theme.palette.primary.dark, paddingX: 10, paddingY: 2, background: 'white', borderColor: 'white', '&:hover': { background: 'transparent', borderColor: 'white', color: 'white' } }}><Typography variant="h6">Connect Wallet</Typography></Button>
             </RootStyle>
             {/* Corporate */}
             <Grid container sx={{ padding: { md: 10, sm: 6, xs: 4, } }}>
