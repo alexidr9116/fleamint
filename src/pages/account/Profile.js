@@ -12,7 +12,7 @@ import StayInLoop from "../../sections/StayInLoop";
 
 export default function Profile() {
     const { id } = useParams();
-
+    console.log(id);
     useEffect(()=>{
 
     },[id]);
